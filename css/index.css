@@ -1,3 +1,76 @@
+.siderSearch {
+  display: none;
+  height: 51px;
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  z-index: 10;
+  background: #fff; }
+  .siderSearch .con {
+    height: 51px;
+    width: 1094px;
+    margin: 0 auto;
+    position: relative; }
+    .siderSearch .con .showSearchMatch {
+      display: none;
+      position: absolute;
+      top: 44px;
+      left: 321px;
+      height: 293px;
+      width: 461px; }
+      .siderSearch .con .showSearchMatch ul {
+        height: 293px;
+        width: 461px;
+        background-color: #fff;
+        border: 1px solid #D4D4D4;
+        z-index: 7;
+        opacity: 0.8; }
+        .siderSearch .con .showSearchMatch ul li {
+          height: 29px;
+          width: 461px;
+          font-size: 12px;
+          line-height: 29px;
+          list-style: none; }
+    .siderSearch .con a {
+      display: block;
+      float: left; }
+    .siderSearch .con .container {
+      float: left;
+      width: 510px;
+      height: 35px;
+      position: relative;
+      border: 2px solid #333333;
+      margin-left: 100px;
+      margin-top: 5px; }
+      .siderSearch .con .container input {
+        width: 430px;
+        height: 35px;
+        margin-left: 30px;
+        border: none;
+        outline: none; }
+      .siderSearch .con .container span {
+        display: inline-block;
+        position: absolute;
+        text-align: center; }
+      .siderSearch .con .container span:nth-of-type(1) {
+        height: 35px;
+        width: 30px;
+        left: 0px; }
+        .siderSearch .con .container span:nth-of-type(1) i {
+          font-size: 12px !important;
+          color: #c8c8c8;
+          line-height: 35px; }
+      .siderSearch .con .container span:nth-of-type(2) {
+        height: 35px;
+        width: 52px;
+        background: #333333;
+        right: 0; }
+        .siderSearch .con .container span:nth-of-type(2) i {
+          font-size: 26px !important;
+          color: #ffffff;
+          line-height: 35px; }
+
 .box {
   height: 32px;
   background: #f2f2f2; }
@@ -21,11 +94,17 @@
 .box .top ul li a {
   color: #666666; }
 
-.box .top ul li {
+.box .top > ul li {
   float: left;
   font-size: 12px;
   line-height: 32px;
   padding: 0 10px; }
+
+.box .top ul:nth-of-type(1) li:hover a {
+  color: #e31436; }
+
+.box .top ul:nth-of-type(2) li:hover a {
+  color: #e31436; }
 
 .box .top ul:nth-of-type(1) li:nth-of-type(3) {
   list-style-image: url(../images/litter.jpg);
@@ -35,6 +114,51 @@
   float: right;
   height: 32px;
   width: 608px; }
+  .box .top ul:nth-of-type(2) li:nth-of-type(3) a, .box .top ul:nth-of-type(2) li:nth-of-type(4) a, .box .top ul:nth-of-type(2) li:nth-of-type(5) a, .box .top ul:nth-of-type(2) li:nth-of-type(7) a {
+    position: relative; }
+    .box .top ul:nth-of-type(2) li:nth-of-type(3) a i, .box .top ul:nth-of-type(2) li:nth-of-type(4) a i, .box .top ul:nth-of-type(2) li:nth-of-type(5) a i, .box .top ul:nth-of-type(2) li:nth-of-type(7) a i {
+      position: absolute;
+      top: -6px;
+      right: -13px;
+      transition: all 0.2s ease-in; }
+  .box .top ul:nth-of-type(2) li:nth-of-type(3):hover a i {
+    transform: rotateZ(360deg); }
+  .box .top ul:nth-of-type(2) li:nth-of-type(3):hover .personCenter {
+    display: block; }
+    .box .top ul:nth-of-type(2) li:nth-of-type(3):hover .personCenter ul li a {
+      color: #333; }
+  .box .top ul:nth-of-type(2) li:nth-of-type(4):hover a i {
+    transform: rotateZ(360deg); }
+  .box .top ul:nth-of-type(2) li:nth-of-type(4):hover .personCenter {
+    display: block; }
+    .box .top ul:nth-of-type(2) li:nth-of-type(4):hover .personCenter ul li a {
+      color: #333; }
+  .box .top ul:nth-of-type(2) li:nth-of-type(5):hover a i {
+    transform: rotateZ(360deg); }
+  .box .top ul:nth-of-type(2) li:nth-of-type(5):hover .personCenter {
+    display: block; }
+    .box .top ul:nth-of-type(2) li:nth-of-type(5):hover .personCenter ul li a {
+      color: #333; }
+  .box .top ul:nth-of-type(2) li:nth-of-type(7):hover a i {
+    transform: rotateZ(360deg); }
+  .box .top ul:nth-of-type(2) li:nth-of-type(7):hover .personCenter {
+    display: block; }
+    .box .top ul:nth-of-type(2) li:nth-of-type(7):hover .personCenter ul li a {
+      color: #333; }
+  .box .top ul:nth-of-type(2) li:nth-of-type(3), .box .top ul:nth-of-type(2) li:nth-of-type(4), .box .top ul:nth-of-type(2) li:nth-of-type(5), .box .top ul:nth-of-type(2) li:nth-of-type(7) {
+    position: relative; }
+    .box .top ul:nth-of-type(2) li:nth-of-type(3) .personCenter, .box .top ul:nth-of-type(2) li:nth-of-type(4) .personCenter, .box .top ul:nth-of-type(2) li:nth-of-type(5) .personCenter, .box .top ul:nth-of-type(2) li:nth-of-type(7) .personCenter {
+      display: none;
+      position: absolute;
+      top: 32px;
+      left: 0;
+      width: 80px;
+      z-index: 5; }
+      .box .top ul:nth-of-type(2) li:nth-of-type(3) .personCenter ul li, .box .top ul:nth-of-type(2) li:nth-of-type(4) .personCenter ul li, .box .top ul:nth-of-type(2) li:nth-of-type(5) .personCenter ul li, .box .top ul:nth-of-type(2) li:nth-of-type(7) .personCenter ul li {
+        float: none;
+        list-style-image: none;
+        background: #fff;
+        width: 80px; }
 
 .box .top ul:nth-of-type(2) li {
   padding: 0 11px;
@@ -65,7 +189,31 @@
   height: 62px;
   width: 514px;
   margin-top: 22px;
-  margin-left: 135px; }
+  margin-left: 135px;
+  position: relative; }
+  .header .top .topSearch .ShowSearchMatch {
+    top: 39px !important;
+    left: 0px !important;
+    z-index: 5;
+    display: none;
+    position: absolute;
+    top: 44px;
+    left: 321px;
+    height: 293px;
+    width: 461px; }
+    .header .top .topSearch .ShowSearchMatch ul {
+      height: 293px;
+      width: 461px;
+      background-color: #fff;
+      border: 1px solid #D4D4D4;
+      z-index: 7;
+      opacity: 0.8; }
+      .header .top .topSearch .ShowSearchMatch ul li {
+        height: 29px;
+        width: 461px;
+        font-size: 12px;
+        line-height: 29px;
+        list-style: none; }
 
 .header .top .topSearch .container {
   width: 510px;
@@ -77,7 +225,8 @@
   width: 430px;
   height: 35px;
   margin-left: 30px;
-  border: none; }
+  border: none;
+  outline: none; }
 
 .header .top .topSearch .container span {
   display: inline-block;
@@ -118,6 +267,7 @@
   padding: 0 8px;
   line-height: 27px;
   height: 27px;
+  list-style: none;
   list-style-image: url(../images/litter.jpg);
   list-style-position: inside; }
 

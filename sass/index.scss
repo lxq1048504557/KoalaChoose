@@ -1,4 +1,94 @@
 @charset "UTF-8";
+//滚动条顶部
+@mixin serchMatch{
+    display: none;
+    position: absolute;
+    top: 44px;
+    left: 321px;
+    height:293px;
+    width: 461px;
+    ul{
+        height:293px;
+        width: 461px; 
+        background-color: #fff;
+        border:1px solid #D4D4D4;
+        z-index: 7;
+        opacity: 0.8;
+        li{
+            height:29px;
+            width:461px;
+            font-size:12px;
+            line-height: 29px;
+            list-style: none;
+        }
+    }
+}
+.siderSearch{
+    display: none;
+    height:51px;
+    position: fixed;
+    top:0;
+    left:0px;
+    width:100%;
+    z-index: 10;
+    background: #fff;
+    .con{
+        height:51px;
+        width:1094px;
+        margin:0 auto;
+        position: relative;
+        .showSearchMatch{
+            @include serchMatch();
+        }
+        a{
+            display: block;
+            float:left;
+        }
+        .container{
+            float:left;
+            width:510px;
+            height:35px;
+            position:relative;
+            border: 2px solid #333333;
+            margin-left:100px;
+            margin-top:5px;
+            input{
+                width: 430px;
+                height:35px;
+                margin-left:30px;
+                border:none;
+                outline: none;
+            }
+            span{
+                display: inline-block;
+                position: absolute;
+                text-align: center;
+            }
+            span:nth-of-type(1){
+                height:35px;
+                width:30px;
+                left:0px;
+                i{
+                     font-size:12px !important;
+                    color:#c8c8c8;
+                    line-height:35px;
+                }
+            }
+            span:nth-of-type(2){
+                height:35px;
+                width:52px;
+                background: #333333;
+                right:0;
+                i{
+                     font-size:26px !important;
+                    color:#ffffff;
+                    line-height:35px;
+                }
+            }
+            
+        }
+    }
+}
 //最顶部
 .box{
     height:32px;
@@ -23,11 +113,17 @@
 .box .top ul li a{
     color:#666666;
 }
-.box .top ul li{
+.box .top >ul li{
     float:left;
     font-size:12px;
     line-height: 32px;
     padding:0 10px;
+}
+.box .top ul:nth-of-type(1) li:hover a{
+      color:#e31436;
+}
+.box .top ul:nth-of-type(2) li:hover a{
+    color:#e31436;
 }
 .box .top ul:nth-of-type(1) li:nth-of-type(3){
     list-style-image: url(../images/litter.jpg);
@@ -37,6 +133,71 @@
     float:right;
     height:32px;
     width:608px;
+    li:nth-of-type(3),li:nth-of-type(4),li:nth-of-type(5),li:nth-of-type(7){
+        a{
+            position: relative;
+            i{
+                position: absolute;
+                top:-6px;
+                right:-13px;
+                transition: all 0.2s ease-in;
+            }
+        }
+    }
+    @mixin rolate{
+      a{
+            i{ 
+                transform: rotateZ(360deg);
+            }
+        }
+        .personCenter{
+            display:block;
+            ul{
+                li{
+                    a{
+                        color:#333;
+                    }
+                }
+            }
+        }
+    }
+    li:nth-of-type(3):hover{
+         @include rolate();
+       
+    }
+    li:nth-of-type(4):hover{
+         @include rolate();
+       
+    }
+    li:nth-of-type(5):hover{
+         @include rolate();
+       
+    }
+    li:nth-of-type(7):hover{
+         @include rolate();
+       
+    }
+    
+    li:nth-of-type(3),li:nth-of-type(4),li:nth-of-type(5),li:nth-of-type(7){
+        position: relative;
+        .personCenter{
+            display: none;
+            position: absolute;
+            top:32px;
+            left:0;
+            width:80px;
+            z-index: 5;
+            ul{
+                li{
+                    float: none;
+                    list-style-image: none;
+                    background: #fff;
+                    width:80px;
+                }
+            }
+        }
+        
+    }
 }
 .box .top ul:nth-of-type(2) li{
     padding: 0 11px;
@@ -69,6 +230,13 @@
     width: 514px;
     margin-top:22px;
     margin-left:135px;
+    position: relative;
+    .ShowSearchMatch{
+        top:39px!important;
+        left:0px!important;
+        z-index: 5;
+        @include serchMatch();
+    }
 }
 .header .top .topSearch .container{
     width:510px;
@@ -81,6 +249,7 @@
     height:35px;
     margin-left:30px;
     border:none;
+    outline: none;
 }
 .header .top .topSearch .container span{
     display: inline-block;
@@ -121,6 +290,7 @@
     padding:0 8px;
     line-height: 27px;
     height:27px;
+    list-style: none;
     list-style-image: url(../images/litter.jpg);
     list-style-position: inside;
 }
