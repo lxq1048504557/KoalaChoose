@@ -1173,12 +1173,161 @@ ul{
         height:384px;
         width:1094px;
         margin:0 auto;
-        background: red;
+        background: #fff;
+        >ul{
+            border:1px solid #E0E0E0;
+            height:123px;
+            width:1092px;
+            li{
+                width:250px;
+                height:125px;
+                float:left;
+                padding:0px 11px;
+                line-height: 125px;
+                dl{
+                  width:250px;
+                  height:125px;
+                  dt{
+                      height:125px;
+                      float:left;
+                      i{
+                          font-size:44px!important;                      }
+                  }  
+                  dd{
+                      height:125px;
+                      float:left;
+                      p{ 
+                          height:30px;
+                          margin-left:10px;
+                          width:150px;
+                          font-size:13px;
+                      }
+                      h4{
+                          margin-left:10px;
+                           height:20px;
+                          width:150px;
+                          font-size:16px;
+                          font-weight: bolder;
+                      }
+                  }
+                }
+            }
+        }
+        .guideList{
+            height:200px;
+            padding-top:58px;;
+            ul{ 
+                width:1094px;
+                height:128px;
+                li{
+                    border-right: 1px solid #E0E0E0;
+                    height:113px;
+                    float:left;
+                    padding:0 5px;
+                    text-align: center;
+                    padding-top:5px;
+                    dl{
+                        width:110px;
+                        dt{
+                            font-weight: normal;
+                        }
+                        dd{
+                            font-size:12px;
+                            margin-top:5px;
+                            a{
+                                color:#333;
+                            }
+                        }
+                    }
+                }
+                li:nth-of-type(1){
+                    div{
+                        margin-top:10px;
+                        >span{
+                            font-size:12px;
+                        }
+                        a{
+                            margin-left:5px;
+                            i{
+                                font-size:25px !important; 
+                              }                     
+                            span{
+                            display: none;
+                            }
+                        }
+                        a:nth-of-type(1){
+                            i{
+                                 color:#FF0000!important;
+                             }
+                        }
+                        a:nth-of-type(2){
+                            i{
+                                 color:limegreen!important;
+                             }
+                        }
+                         a:nth-of-type(3){
+                            i{
+                                 color:#5CB85C!important;
+                             }
+                        }
+                    }
+                }
+                li:nth-of-type(7){
+                    border-right: none;
+                    dl{
+                        dt{
+                           img{
+                                height:100px;
+                           }
+                        }
+                        dd{
+                            margin-top:0;
+                        }
+                    }
+                }
+            }
+        }
     }
     .footerAbout{
         height:153px;
-        width:1094px;
-        margin:0 auto;
-        background: red;
+        background: #333;
+        .boxC{
+            width:1094px;
+            height:153px;
+            margin:0 auto;
+            .friendLink{
+            padding-top:30px;;
+            height: 123px;
+            width: 800px;
+            font-size:12px;
+            margin:0 auto;
+            text-align: center;
+            color:#c2c2c2;
+            p{
+                margin-top:6px;
+                a{
+                    color:#c2c2c2;
+                }
+            }
+            p:nth-of-type(3){
+                a{
+                    span:nth-of-type(1){
+                        img{
+                            height:15px;
+                            width:15px;
+                        }
+                    }
+                }
+            }
+            p:nth-of-type(4){
+                a{
+                    img{
+                        height: 30px;
+                        margin: 5px 15px 0 0;
+                    }
+                }
+            }
+        }
+        }
     }
 }

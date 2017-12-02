@@ -2695,9 +2695,105 @@
     height: 384px;
     width: 1094px;
     margin: 0 auto;
-    background: red; }
+    background: #fff; }
+    .footer .footerWrap > ul {
+      border: 1px solid #E0E0E0;
+      height: 123px;
+      width: 1092px; }
+      .footer .footerWrap > ul li {
+        width: 250px;
+        height: 125px;
+        float: left;
+        padding: 0px 11px;
+        line-height: 125px; }
+        .footer .footerWrap > ul li dl {
+          width: 250px;
+          height: 125px; }
+          .footer .footerWrap > ul li dl dt {
+            height: 125px;
+            float: left; }
+            .footer .footerWrap > ul li dl dt i {
+              font-size: 44px !important; }
+          .footer .footerWrap > ul li dl dd {
+            height: 125px;
+            float: left; }
+            .footer .footerWrap > ul li dl dd p {
+              height: 30px;
+              margin-left: 10px;
+              width: 150px;
+              font-size: 13px; }
+            .footer .footerWrap > ul li dl dd h4 {
+              margin-left: 10px;
+              height: 20px;
+              width: 150px;
+              font-size: 16px;
+              font-weight: bolder; }
+    .footer .footerWrap .guideList {
+      height: 200px;
+      padding-top: 58px; }
+      .footer .footerWrap .guideList ul {
+        width: 1094px;
+        height: 128px; }
+        .footer .footerWrap .guideList ul li {
+          border-right: 1px solid #E0E0E0;
+          height: 113px;
+          float: left;
+          padding: 0 5px;
+          text-align: center;
+          padding-top: 5px; }
+          .footer .footerWrap .guideList ul li dl {
+            width: 110px; }
+            .footer .footerWrap .guideList ul li dl dt {
+              font-weight: normal; }
+            .footer .footerWrap .guideList ul li dl dd {
+              font-size: 12px;
+              margin-top: 5px; }
+              .footer .footerWrap .guideList ul li dl dd a {
+                color: #333; }
+        .footer .footerWrap .guideList ul li:nth-of-type(1) div {
+          margin-top: 10px; }
+          .footer .footerWrap .guideList ul li:nth-of-type(1) div > span {
+            font-size: 12px; }
+          .footer .footerWrap .guideList ul li:nth-of-type(1) div a {
+            margin-left: 5px; }
+            .footer .footerWrap .guideList ul li:nth-of-type(1) div a i {
+              font-size: 25px !important; }
+            .footer .footerWrap .guideList ul li:nth-of-type(1) div a span {
+              display: none; }
+          .footer .footerWrap .guideList ul li:nth-of-type(1) div a:nth-of-type(1) i {
+            color: #FF0000 !important; }
+          .footer .footerWrap .guideList ul li:nth-of-type(1) div a:nth-of-type(2) i {
+            color: limegreen !important; }
+          .footer .footerWrap .guideList ul li:nth-of-type(1) div a:nth-of-type(3) i {
+            color: #5CB85C !important; }
+        .footer .footerWrap .guideList ul li:nth-of-type(7) {
+          border-right: none; }
+          .footer .footerWrap .guideList ul li:nth-of-type(7) dl dt img {
+            height: 100px; }
+          .footer .footerWrap .guideList ul li:nth-of-type(7) dl dd {
+            margin-top: 0; }
   .footer .footerAbout {
     height: 153px;
-    width: 1094px;
-    margin: 0 auto;
-    background: yellow; }
+    background: #333; }
+    .footer .footerAbout .boxC {
+      width: 1094px;
+      height: 153px;
+      margin: 0 auto; }
+      .footer .footerAbout .boxC .friendLink {
+        padding-top: 30px;
+        height: 123px;
+        width: 800px;
+        font-size: 12px;
+        margin: 0 auto;
+        text-align: center;
+        color: #c2c2c2; }
+        .footer .footerAbout .boxC .friendLink p {
+          margin-top: 6px; }
+          .footer .footerAbout .boxC .friendLink p a {
+            color: #c2c2c2; }
+        .footer .footerAbout .boxC .friendLink p:nth-of-type(3) a span:nth-of-type(1) img {
+          height: 15px;
+          width: 15px; }
+        .footer .footerAbout .boxC .friendLink p:nth-of-type(4) a img {
+          height: 30px;
+          margin: 5px 15px 0 0; }
