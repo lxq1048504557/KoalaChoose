@@ -2,11 +2,14 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>首页</title>
 		<link rel="stylesheet" type="text/css" href="css/base.css"/>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<link rel="stylesheet" href="font/iconfont.css" />
+		<link rel="stylesheet" href="lib/xmcarousel/Carousel.css" />
 		<script src="lib/requirejs/require.js" data-main="/js/index" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/xmcarousel/XQuery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/xmcarousel/lb.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<!--滑动到一半时，需要显示的搜索栏-->
@@ -41,10 +44,8 @@
 		</div>
 		<!--轮播-->
 		<div class="banner">
-			<ul>
-				<li><a href="#"><img src="images/uzGWo2rCvO8TrkTrVEaM5hKo-DtXRWUVP8ydFQ5KST17010162330_1920_400.jpg"/></a></li>
-			</ul>
-			<ul>
+			<div id="Box"></div>
+			<ul class="bannerList">
 				<li><a href="#"><i class="iconfont icon-icon125"></i>母婴儿童<i class="iconfont icon-xiangyou"></i></a></li>
 				<li><a href="#"><i class="iconfont icon-kouhong"></i>美容彩妆<i class="iconfont icon-xiangyou"></i></a></li>
 				<li><a href="#"><i class="iconfont icon-bao"></i>服饰鞋包<i class="iconfont icon-xiangyou"></i></a></li>
@@ -90,82 +91,29 @@
 			</div>
 			<div class="dailyLimitBottom">
 				<selection>
-					<dl>
-						<dt><a href="#"><img src="images/onlineihlt8qgl20064.jpg"/></a></dt>
-						<dd>
-							<h4><a href="#">挪威知名品牌鱼油</a></h4>
-							<p><a href="#"><span>2件装|<span>&nbsp;【品牌直采】&nbsp;NORDIC&nbsp;NATUR<br/>
-								ALS&nbsp;挪威小鱼&nbsp;北极D鳕鱼鱼肝油&nbsp;柠檬
-							</a></p>
-							<p><span>￥228</span><span>￥308</span></p>
-							<div>
-								<p>
-									<span></span>
-									<span>剩余件数50</span>
-								</p>
-								<p>
-									<a href="#">立即抢购</a>
-								</p>
-							</div>
-						</dd>
-					</dl>
-					<dl>
-						<dt><a href="#"><img src="images/onlineihlt8qgl20064.jpg"/></a></dt>
-						<dd>
-							<h4><a href="#">挪威知名品牌鱼油</a></h4>
-							<p><a href="#"><span>2件装|<span>&nbsp;【品牌直采】&nbsp;NORDIC&nbsp;NATUR<br/>
-								ALS&nbsp;挪威小鱼&nbsp;北极D鳕鱼鱼肝油&nbsp;柠檬
-							</a></p>
-							<p><span>￥228</span>￥308</p>
-							<div>
-								<p>
-									<span></span>
-									<span>剩余件数</span>
-								</p>
-								<p>
-									<a href="#">立即抢购</a>
-								</p>
-							</div>
-						</dd>
-					</dl>
-					<dl>
-						<dt><a href="#"><img src="images/onlineihlt8qgl20064.jpg"/></a></dt>
-						<dd>
-							<h4><a href="#">挪威知名品牌鱼油</a></h4>
-							<p><a href="#"><span>2件装|<span>&nbsp;【品牌直采】&nbsp;NORDIC&nbsp;NATUR<br/>
-								ALS&nbsp;挪威小鱼&nbsp;北极D鳕鱼鱼肝油&nbsp;柠檬
-							</a></p>
-							<p><span>￥228</span><span>￥308</span></p>
-							<div>
-								<p>
-									<span></span>
-									<span>剩余件数50</span>
-								</p>
-								<p>
-									<a href="#">立即抢购</a>
-								</p>
-							</div>
-						</dd>
-					</dl>
-					<dl>
-						<dt><a href="#"><img src="images/onlineihlt8qgl20064.jpg"/></a></dt>
-						<dd>
-							<h4><a href="#">挪威知名品牌鱼油</a></h4>
-							<p><a href="#"><span>2件装|<span>&nbsp;【品牌直采】&nbsp;NORDIC&nbsp;NATUR<br/>
-								ALS&nbsp;挪威小鱼&nbsp;北极D鳕鱼鱼肝油&nbsp;柠檬
-							</a></p>
-							<p><span>￥228</span>￥308</p>
-							<div>
-								<p>
-									<span></span>
-									<span>剩余件数</span>
-								</p>
-								<p>
-									<a href="#">立即抢购</a>
-								</p>
-							</div>
-						</dd>
-					</dl>
+					<script type="text/html" id="listOne">
+						{{each products as product}}
+							<dl>
+								<dt><a href="#"><img src="{{product.img}}"/></a></dt>
+								<dd>
+									<h4><a href="#">{{product.title}}</a></h4>
+									<p><a href="#"><span>2件装|<span>&nbsp;【品牌直采】&nbsp;NORDIC&nbsp;NATUR<br/>ALS&nbsp;挪威小鱼&nbsp;北极D鳕鱼鱼肝油&nbsp;柠檬
+									</a></p>
+									<p><span>{{product.price}}</span><span>￥308</span></p>
+									<div>
+										<p>
+											<span></span>
+											<span>{{product.rethat}}</span>
+										</p>
+										<p>
+											<a href="#">{{product.buyQuick}}</a>
+										</p>
+									</div>
+								</dd>
+						</dl>
+						{{/each}}
+					</script>
+					
 				</selection>
 				<aside>
 					<a href="#"><img src="images/j0d9lup691_221_378.jpg"/></a>
@@ -182,82 +130,17 @@
 				<p><a href="#">进入新品频道></a></p>
 			</div>
 			<div class="dailyNewBottom">
-				<dl>
-					<dt><a href="#"><img src="images/iz9sk1hd1_120_120.jpg"/></a></dt>
-					<dd>
-						<h5><a href="#">一块能成为你亲密朋...</a></h5>
-						<p><a href="#">美度新品上线<span>></span></a></p>
-					</dd>
-				</dl>
-				<dl>
-					<dt><a href="#"><img src="images/watch.jpg"/></a></dt>
-				</dl>
-				<dl>
-					<dt><a href="#"><img src="images/07f1ec29d1a249d78f07ba693a8aa1af1511160487622ja7txqr311388.jpg"/></a></dt>
-					<dd>
-						<h5><a href="#">DELUXE&nbsp;Towels&nbsp;30x50厘...</a></h5>
-						<p><a href="#"><span>￥58</span><span>￥109</span></a></p>
-					</dd>
-				</dl>
-				<dl>
-					<dt><a href="#"><img src="images/17df5fde786b494e972f07e973fe2adf1511751896606jahm1ont17980.JPG"/></a></dt>
-					<dd>
-						<h5><a href="#">CaMin&nbsp;Klein&nbsp;卡文克莱CW...</a></h5>
-						<p><a href="#"><span>￥759</span><span>￥1299</span></a></p>
-					</dd>
-				</dl>
-				<dl>
-					<dt><a href="#"><img src="images/e4e17c55300d40c7bb45e125791111eb1507702819805j8mnbx4710417.jpg"/></a></dt>
-					<dd>
-						<h5><a href="#">【耳钉套装】&nbsp;SWAROVSKI...</a></h5>
-						<p><a href="#"><span>￥369</span><span>￥550</span></a></p>
-					</dd>
-				</dl>
-				<dl>
-					<dt><a href="#"><img src="images/3d1c0552eb874ee3a7522997ad89a8e11509083986281j99hn42b10385.jpg"/></a></dt>
-					<dd>
-						<h5><a href="#">mama&nbsp;mio&nbsp;预防妊娠纹按...</a></h5>
-						<p><a href="#"><span>￥288</span><span>￥399</span></a></p>
-					</dd>
-				</dl>
-				<dl>
-					<dt><a href="#"><img src="images/iur1c3vu42_800_800.jpg"/></a></dt>
-					<dd>
-						<h5><a href="#">【法国波尔多格拉芙列级庄...</a></h5>
-						<p><a href="#"><span>￥299</span><span>￥298</span></a></p>
-					</dd>
-				</dl>
-				<dl>
-					<dt><a href="#"><img src="images/47c509a90cd2475aa4f87c3b632f838b1511772622752jahydx8m18969.jpg"/></a></dt>
-					<dd>
-						<h5><a href="#">考拉工厂店&nbsp;城市停车场...</a></h5>
-						<p><a href="#"><span>￥298</span><span>￥1299</span></a></p>
-					</dd>
-				</dl>
-				<dl>
-					<dt><a href="#"><img src="images/8054f2e1f164456b9072ce8c833a4a3a1510813940280ja23m14113426.jpg"/></a></dt>
-					<dd>
-						<h5><a href="#">【2017秋冬新款】&nbsp;FENDI...</a></h5>
-						<p><a href="#"><span>￥1369</span><span>￥2550</span></a></p>
-					</dd>
-				</dl>
-				<dl>
-					<dt><a href="#"><img src="images/320435b360b247d79b5dd862e4c77ded1511239635926ja9525z812471.jpg"/></a></dt>
-					<dd>
-						<h5><a href="#">Arcanli显光眼线笔&nbsp;(防水...</a></h5>
-						<p><a href="#"><span>￥79</span><span>￥399</span></a></p>
-					</dd>
-				</dl>
-				<dl>
-					<dt><a href="#"><img src="images/ea0ec92623b04ea0ac541636397608e41511162819723ja7vbq7o11443.jpg"/></a></dt>
-					<dd>
-						<h5><a href="#">soft&nbsp;Towel...</a></h5>
-						<p><a href="#"><span>￥58</span><span>￥150</span></a></p>
-					</dd>
-				</dl>
-				<dl>
-					<dt><a href="#"><img src="images/j14sa6wz26_180_230.jpg"/></a></dt>
-				</dl>
+				<script type="text/html" id="listTwo">
+					{{each products as Product}}
+						<dl>
+							<dt><a href="#"><img src="{{Product.img}}"/></a></dt>
+							<dd>
+								<h5><a href="#">{{Product.h}}</a></h5>
+								<p><a href="#"><span>{{Product.pO}}</span><span>{{Product.pT}}</span></a></p>
+							</dd>
+						</dl>
+					{{/each}}
+				</script>
 			</div>
 		</div>
 		<!--热门品牌-->
@@ -467,8 +350,8 @@
 					</div>
 					<div class="aside">
 						<h3>最新热卖</h3>
-						<div class="carousel">
-							<ul>
+						<div class="CArousel">
+							<ul class="first">
 								<li>
 									<dl>
 										<dt><a href="#"><img src="images/itckpdix47_800_800.jpg"/></a></dt>
@@ -506,8 +389,46 @@
 									</dl>
 								</li>
 							</ul>
+							<ul class="second">
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/1.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">medela&nbsp;美德乐<br />Bravado哺乐多哺乳</a></p>
+											<p><span>￥228</span><span>￥298</span></p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/2.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">【品牌直采】<br />Culturelle&nbsp;婴</a></p>
+											<p><span>￥238</span><span>￥398</span></p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/3.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">medela&nbsp;美德乐<br />Bravado哺乐多哺乳</a></p>
+											<p><span>￥99</span><span>￥298</span></p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/4.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">【品牌直采】<br />Culturelle&nbsp;婴</a></p>
+											<p><span>￥2238</span><span>￥3398</span></p>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+
 						</div>
-						<div class="circle"></div>
 					</div>
 				</section>
 			</div>
@@ -587,8 +508,8 @@
 					</div>
 					<div class="aside">
 						<h3>最新热卖</h3>
-						<div class="carousel">
-							<ul>
+						<div class="CArousel">
+							<ul class="first">
 								<li>
 									<dl>
 										<dt><a href="#"><img src="images/1.jpg"/></a></dt>
@@ -626,8 +547,45 @@
 									</dl>
 								</li>
 							</ul>
+							<ul class="second">
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/itckpdix47_800_800.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">medela&nbsp;美德乐<br />Bravado哺乐多哺乳</a></p>
+											<p><span>￥228</span><span>￥298</span></p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/1bjh7t8lr28_800_800.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">【品牌直采】<br />Culturelle&nbsp;婴</a></p>
+											<p><span>￥238</span><span>￥398</span></p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/onlinei8uzoezb10250.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">medela&nbsp;美德乐<br />Bravado哺乐多哺乳</a></p>
+											<p><span>￥99</span><span>￥298</span></p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/1bgskhikm48_800_800.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">【品牌直采】<br />Culturelle&nbsp;婴</a></p>
+											<p><span>￥2238</span><span>￥3398</span></p>
+										</dd>
+									</dl>
+								</li>
+							</ul>
 						</div>
-						<div class="circle"></div>
 					</div>
 				</section>
 			</div>
@@ -708,8 +666,8 @@
 					</div>
 					<div class="aside">
 						<h3>最新热卖</h3>
-						<div class="carousel">
-							<ul>
+						<div class="CArousel">
+							<ul class="first">
 								<li>
 									<dl>
 										<dt><a href="#"><img src="images/10.jpg"/></a></dt>
@@ -740,6 +698,44 @@
 								<li>
 									<dl>
 										<dt><a href="#"><img src="images/13.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">【品牌直采】<br />Culturelle&nbsp;婴</a></p>
+											<p><span>￥2238</span><span>￥3398</span></p>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<ul class="second">
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/itckpdix47_800_800.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">medela&nbsp;美德乐<br />Bravado哺乐多哺乳</a></p>
+											<p><span>￥228</span><span>￥298</span></p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/1bjh7t8lr28_800_800.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">【品牌直采】<br />Culturelle&nbsp;婴</a></p>
+											<p><span>￥238</span><span>￥398</span></p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/onlinei8uzoezb10250.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">medela&nbsp;美德乐<br />Bravado哺乐多哺乳</a></p>
+											<p><span>￥99</span><span>￥298</span></p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/1bgskhikm48_800_800.jpg"/></a></dt>
 										<dd>
 											<p><a href="#">【品牌直采】<br />Culturelle&nbsp;婴</a></p>
 											<p><span>￥2238</span><span>￥3398</span></p>
@@ -829,8 +825,8 @@
 					</div>
 					<div class="aside">
 						<h3>最新热卖</h3>
-						<div class="carousel">
-							<ul>
+						<div class="CArousel">
+							<ul class="first">
 								<li>
 									<dl>
 										<dt><a href="#"><img src="images/l1.jpg"/></a></dt>
@@ -861,6 +857,44 @@
 								<li>
 									<dl>
 										<dt><a href="#"><img src="images/l4.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">【品牌直采】<br />Culturelle&nbsp;婴</a></p>
+											<p><span>￥2238</span><span>￥3398</span></p>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<ul class="second">
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/itckpdix47_800_800.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">medela&nbsp;美德乐<br />Bravado哺乐多哺乳</a></p>
+											<p><span>￥228</span><span>￥298</span></p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/1bjh7t8lr28_800_800.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">【品牌直采】<br />Culturelle&nbsp;婴</a></p>
+											<p><span>￥238</span><span>￥398</span></p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/onlinei8uzoezb10250.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">medela&nbsp;美德乐<br />Bravado哺乐多哺乳</a></p>
+											<p><span>￥99</span><span>￥298</span></p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/1bgskhikm48_800_800.jpg"/></a></dt>
 										<dd>
 											<p><a href="#">【品牌直采】<br />Culturelle&nbsp;婴</a></p>
 											<p><span>￥2238</span><span>￥3398</span></p>
@@ -950,8 +984,8 @@
 					</div>
 					<div class="aside">
 						<h3>最新热卖</h3>
-						<div class="carousel">
-							<ul>
+						<div class="CArousel">
+							<ul class="first">
 								<li>
 									<dl>
 										<dt><a href="#"><img src="images/h11.jpg"/></a></dt>
@@ -982,6 +1016,44 @@
 								<li>
 									<dl>
 										<dt><a href="#"><img src="images/h14.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">【品牌直采】<br />Culturelle&nbsp;婴</a></p>
+											<p><span>￥2238</span><span>￥3398</span></p>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<ul class="second">
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/itckpdix47_800_800.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">medela&nbsp;美德乐<br />Bravado哺乐多哺乳</a></p>
+											<p><span>￥228</span><span>￥298</span></p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/1bjh7t8lr28_800_800.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">【品牌直采】<br />Culturelle&nbsp;婴</a></p>
+											<p><span>￥238</span><span>￥398</span></p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/onlinei8uzoezb10250.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">medela&nbsp;美德乐<br />Bravado哺乐多哺乳</a></p>
+											<p><span>￥99</span><span>￥298</span></p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/1bgskhikm48_800_800.jpg"/></a></dt>
 										<dd>
 											<p><a href="#">【品牌直采】<br />Culturelle&nbsp;婴</a></p>
 											<p><span>￥2238</span><span>￥3398</span></p>
@@ -1071,8 +1143,8 @@
 					</div>
 					<div class="aside">
 						<h3>最新热卖</h3>
-						<div class="carousel">
-							<ul>
+						<div class="CArousel">
+							<ul class="first">
 								<li>
 									<dl>
 										<dt><a href="#"><img src="images/S11.jpg"/></a></dt>
@@ -1103,6 +1175,44 @@
 								<li>
 									<dl>
 										<dt><a href="#"><img src="images/S14.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">【品牌直采】<br />Culturelle&nbsp;婴</a></p>
+											<p><span>￥2238</span><span>￥3398</span></p>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<ul class="second">
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/itckpdix47_800_800.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">medela&nbsp;美德乐<br />Bravado哺乐多哺乳</a></p>
+											<p><span>￥228</span><span>￥298</span></p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/1bjh7t8lr28_800_800.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">【品牌直采】<br />Culturelle&nbsp;婴</a></p>
+											<p><span>￥238</span><span>￥398</span></p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/onlinei8uzoezb10250.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">medela&nbsp;美德乐<br />Bravado哺乐多哺乳</a></p>
+											<p><span>￥99</span><span>￥298</span></p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/1bgskhikm48_800_800.jpg"/></a></dt>
 										<dd>
 											<p><a href="#">【品牌直采】<br />Culturelle&nbsp;婴</a></p>
 											<p><span>￥2238</span><span>￥3398</span></p>
@@ -1192,8 +1302,8 @@
 					</div>
 					<div class="aside">
 						<h3>最新热卖</h3>
-						<div class="carousel">
-							<ul>
+						<div class="CArousel">
+							<ul class="first">
 								<li>
 									<dl>
 										<dt><a href="#"><img src="images/E11.jpg"/></a></dt>
@@ -1224,6 +1334,44 @@
 								<li>
 									<dl>
 										<dt><a href="#"><img src="images/E14.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">【品牌直采】<br />Culturelle&nbsp;婴</a></p>
+											<p><span>￥2238</span><span>￥3398</span></p>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<ul class="second">
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/itckpdix47_800_800.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">medela&nbsp;美德乐<br />Bravado哺乐多哺乳</a></p>
+											<p><span>￥228</span><span>￥298</span></p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/1bjh7t8lr28_800_800.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">【品牌直采】<br />Culturelle&nbsp;婴</a></p>
+											<p><span>￥238</span><span>￥398</span></p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/onlinei8uzoezb10250.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">medela&nbsp;美德乐<br />Bravado哺乐多哺乳</a></p>
+											<p><span>￥99</span><span>￥298</span></p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/1bgskhikm48_800_800.jpg"/></a></dt>
 										<dd>
 											<p><a href="#">【品牌直采】<br />Culturelle&nbsp;婴</a></p>
 											<p><span>￥2238</span><span>￥3398</span></p>
@@ -1313,8 +1461,8 @@
 					</div>
 					<div class="aside">
 						<h3>最新热卖</h3>
-						<div class="carousel">
-							<ul>
+						<div class="CArousel">
+							<ul class="first">
 								<li>
 									<dl>
 										<dt><a href="#"><img src="images/F11.jpg"/></a></dt>
@@ -1345,6 +1493,44 @@
 								<li>
 									<dl>
 										<dt><a href="#"><img src="images/F14.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">【品牌直采】<br />Culturelle&nbsp;婴</a></p>
+											<p><span>￥2238</span><span>￥3398</span></p>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<ul class="second">
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/itckpdix47_800_800.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">medela&nbsp;美德乐<br />Bravado哺乐多哺乳</a></p>
+											<p><span>￥228</span><span>￥298</span></p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/1bjh7t8lr28_800_800.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">【品牌直采】<br />Culturelle&nbsp;婴</a></p>
+											<p><span>￥238</span><span>￥398</span></p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/onlinei8uzoezb10250.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">medela&nbsp;美德乐<br />Bravado哺乐多哺乳</a></p>
+											<p><span>￥99</span><span>￥298</span></p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/1bgskhikm48_800_800.jpg"/></a></dt>
 										<dd>
 											<p><a href="#">【品牌直采】<br />Culturelle&nbsp;婴</a></p>
 											<p><span>￥2238</span><span>￥3398</span></p>
@@ -1433,8 +1619,8 @@
 					</div>
 					<div class="aside">
 						<h3>最新热卖</h3>
-						<div class="carousel">
-							<ul>
+						<div class="CArousel">
+							<ul class="first">
 								<li>
 									<dl>
 										<dt><a href="#"><img src="images/R11.jpg"/></a></dt>
@@ -1465,6 +1651,44 @@
 								<li>
 									<dl>
 										<dt><a href="#"><img src="images/R14.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">【品牌直采】<br />Culturelle&nbsp;婴</a></p>
+											<p><span>￥2238</span><span>￥3398</span></p>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<ul class="second">
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/itckpdix47_800_800.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">medela&nbsp;美德乐<br />Bravado哺乐多哺乳</a></p>
+											<p><span>￥228</span><span>￥298</span></p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/1bjh7t8lr28_800_800.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">【品牌直采】<br />Culturelle&nbsp;婴</a></p>
+											<p><span>￥238</span><span>￥398</span></p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/onlinei8uzoezb10250.jpg"/></a></dt>
+										<dd>
+											<p><a href="#">medela&nbsp;美德乐<br />Bravado哺乐多哺乳</a></p>
+											<p><span>￥99</span><span>￥298</span></p>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><a href="#"><img src="images/1bgskhikm48_800_800.jpg"/></a></dt>
 										<dd>
 											<p><a href="#">【品牌直采】<br />Culturelle&nbsp;婴</a></p>
 											<p><span>￥2238</span><span>￥3398</span></p>

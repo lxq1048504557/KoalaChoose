@@ -1,5 +1,6 @@
 require(["config"],function($){
-	require(["jquery","loadHeaderFooter"],function($){
+	require(["jquery","template","loadHeaderFooter"],function($){
+		var template = require('template');
 		$(function(){
 			$(window).on("scroll",function(){
 				if(Number($(document).scrollTop())>500){
@@ -14,9 +15,39 @@ require(["config"],function($){
 			$("body").not("#topSearch").on("click",function(){
 				$(".showSearchMatch").css("display","none");
 			});
+			//实现侧边栏轮播
+			function asideCarousel(id,ID){
+				var timer=setInterval(function(){
+				$(ID).fadeIn("slow",function(){
+					$(ID).fadeOut("slow",function(){
+						$(id).fadeIn("slow");
+					});
+				});
+			},2000);
+			}
+			asideCarousel(".first",".second");
+			//处理模拟数据
+			$.getJSON("../mock/list.json",function(respData){
+				//开始处理拿回的数据
+				var data={
+					products:respData.data
+				}
+				var html=template("listOne",data);
+				$("selection").html(html);
+			});
+			//处理模拟数据2
+			$.getJSON("../mock/listT.json",function(respData){
+			//开始处理拿回的数据
+			var data={
+				products:respData.data
+			}
+			console.log("hh");
+			var html=template("listTwo",data);
+			$(".dailyNewBottom").html(html);
+			});
 		});
-	
 	});
+	
 });
  function searchMatch(Id,classname){
 	$.getJSON("https://suggest.taobao.com/sug?code=utf-8&q="+ $(Id).val() +"&callback=?",function(data){
@@ -32,3 +63,20 @@ require(["config"],function($){
 		}
 	});
 }
+new Carousel({
+				imgs:[{src:"../images/ban.jpg",href:"#"},
+				{src:"../images/banner1.jpg",href:"#"},
+				{src:"../images/banner2.jpg",href:"#"},
+				{src:"../images/banner3.jpg",href:"#"},
+				{src:"../images/banner4.jpg",href:"#"},
+				{src:"../images/banner5.jpg",href:"#"},
+				{src:"../images/banner6.jpg",href:"#"}
+				],
+				width:100,
+				height:400,
+				isPage:true,
+				isAuto:true,
+				container:$("#Box"),//轮播图的容器
+				duration:3000
+}).init();
+//实现侧边栏淡入淡出

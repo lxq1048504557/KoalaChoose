@@ -1,340 +1,10 @@
-.siderSearch {
-  display: none;
-  height: 51px;
-  position: fixed;
-  top: 0;
-  left: 0px;
-  width: 100%;
-  z-index: 10;
-  background: #fff; }
-  .siderSearch .con {
-    height: 51px;
-    width: 1094px;
-    margin: 0 auto;
-    position: relative; }
-    .siderSearch .con .showSearchMatch {
-      display: none;
-      position: absolute;
-      top: 44px;
-      left: 321px;
-      height: 293px;
-      width: 461px; }
-      .siderSearch .con .showSearchMatch ul {
-        height: 293px;
-        width: 461px;
-        background-color: #fff;
-        border: 1px solid #D4D4D4;
-        z-index: 7;
-        opacity: 0.8; }
-        .siderSearch .con .showSearchMatch ul li {
-          height: 29px;
-          width: 461px;
-          font-size: 12px;
-          line-height: 29px;
-          list-style: none; }
-    .siderSearch .con a {
-      display: block;
-      float: left; }
-    .siderSearch .con .container {
-      float: left;
-      width: 510px;
-      height: 35px;
-      position: relative;
-      border: 2px solid #333333;
-      margin-left: 100px;
-      margin-top: 5px; }
-      .siderSearch .con .container input {
-        width: 430px;
-        height: 35px;
-        margin-left: 30px;
-        border: none;
-        outline: none; }
-      .siderSearch .con .container span {
-        display: inline-block;
-        position: absolute;
-        text-align: center; }
-      .siderSearch .con .container span:nth-of-type(1) {
-        height: 35px;
-        width: 30px;
-        left: 0px; }
-        .siderSearch .con .container span:nth-of-type(1) i {
-          font-size: 12px !important;
-          color: #c8c8c8;
-          line-height: 35px; }
-      .siderSearch .con .container span:nth-of-type(2) {
-        height: 35px;
-        width: 52px;
-        background: #333333;
-        right: 0; }
-        .siderSearch .con .container span:nth-of-type(2) i {
-          font-size: 26px !important;
-          color: #ffffff;
-          line-height: 35px; }
-
-.box {
-  height: 32px;
-  background: #f2f2f2; }
-
-.box .top {
-  height: 32px;
-  width: 1094px;
-  margin: 0 auto; }
-
-.box .top ul:nth-of-type(1) {
-  float: left;
-  height: 32px;
-  width: 327px; }
-
-.box .top ul:nth-of-type(1) li:nth-of-type(4), .box .top ul:nth-of-type(2) li:nth-of-type(1) a i {
-  color: #e31436 !important; }
-
-.box .top ul li a i {
-  font-size: 12px !important; }
-
-.box .top ul li a {
-  color: #666666; }
-
-.box .top > ul li {
-  float: left;
-  font-size: 12px;
-  line-height: 32px;
-  padding: 0 10px; }
-
-.box .top ul:nth-of-type(1) li:hover a {
-  color: #e31436; }
-
-.box .top ul:nth-of-type(2) li:hover a {
-  color: #e31436; }
-
-.box .top ul:nth-of-type(1) li:nth-of-type(3) {
-  list-style-image: url(../images/litter.jpg);
-  list-style-position: inside; }
-
-.box .top ul:nth-of-type(2) {
-  float: right;
-  height: 32px;
-  width: 608px; }
-  .box .top ul:nth-of-type(2) li:nth-of-type(3) a, .box .top ul:nth-of-type(2) li:nth-of-type(4) a, .box .top ul:nth-of-type(2) li:nth-of-type(5) a, .box .top ul:nth-of-type(2) li:nth-of-type(7) a {
-    position: relative; }
-    .box .top ul:nth-of-type(2) li:nth-of-type(3) a i, .box .top ul:nth-of-type(2) li:nth-of-type(4) a i, .box .top ul:nth-of-type(2) li:nth-of-type(5) a i, .box .top ul:nth-of-type(2) li:nth-of-type(7) a i {
-      position: absolute;
-      top: -6px;
-      right: -13px;
-      transition: all 0.2s ease-in; }
-  .box .top ul:nth-of-type(2) li:nth-of-type(3):hover a i {
-    transform: rotateZ(360deg); }
-  .box .top ul:nth-of-type(2) li:nth-of-type(3):hover .personCenter {
-    display: block; }
-    .box .top ul:nth-of-type(2) li:nth-of-type(3):hover .personCenter ul li a {
-      color: #333; }
-  .box .top ul:nth-of-type(2) li:nth-of-type(4):hover a i {
-    transform: rotateZ(360deg); }
-  .box .top ul:nth-of-type(2) li:nth-of-type(4):hover .personCenter {
-    display: block; }
-    .box .top ul:nth-of-type(2) li:nth-of-type(4):hover .personCenter ul li a {
-      color: #333; }
-  .box .top ul:nth-of-type(2) li:nth-of-type(5):hover a i {
-    transform: rotateZ(360deg); }
-  .box .top ul:nth-of-type(2) li:nth-of-type(5):hover .personCenter {
-    display: block; }
-    .box .top ul:nth-of-type(2) li:nth-of-type(5):hover .personCenter ul li a {
-      color: #333; }
-  .box .top ul:nth-of-type(2) li:nth-of-type(7):hover a i {
-    transform: rotateZ(360deg); }
-  .box .top ul:nth-of-type(2) li:nth-of-type(7):hover .personCenter {
-    display: block; }
-    .box .top ul:nth-of-type(2) li:nth-of-type(7):hover .personCenter ul li a {
-      color: #333; }
-  .box .top ul:nth-of-type(2) li:nth-of-type(3), .box .top ul:nth-of-type(2) li:nth-of-type(4), .box .top ul:nth-of-type(2) li:nth-of-type(5), .box .top ul:nth-of-type(2) li:nth-of-type(7) {
-    position: relative; }
-    .box .top ul:nth-of-type(2) li:nth-of-type(3) .personCenter, .box .top ul:nth-of-type(2) li:nth-of-type(4) .personCenter, .box .top ul:nth-of-type(2) li:nth-of-type(5) .personCenter, .box .top ul:nth-of-type(2) li:nth-of-type(7) .personCenter {
-      display: none;
-      position: absolute;
-      top: 32px;
-      left: 0;
-      width: 80px;
-      z-index: 5; }
-      .box .top ul:nth-of-type(2) li:nth-of-type(3) .personCenter ul li, .box .top ul:nth-of-type(2) li:nth-of-type(4) .personCenter ul li, .box .top ul:nth-of-type(2) li:nth-of-type(5) .personCenter ul li, .box .top ul:nth-of-type(2) li:nth-of-type(7) .personCenter ul li {
-        float: none;
-        list-style-image: none;
-        background: #fff;
-        width: 80px; }
-
-.box .top ul:nth-of-type(2) li {
-  padding: 0 11px;
-  list-style-image: url(../images/litter.jpg);
-  list-style-position: inside; }
-
-.box .top ul:nth-of-type(2) li:nth-of-type(1), .box .top ul:nth-of-type(2) li:nth-of-type(7) {
-  list-style-image: none; }
-
-.header {
-  height: 142px;
-  background: #ffffff; }
-
-.header .top {
-  height: 100px;
-  width: 1094px;
-  margin: 0 auto; }
-
-.header .top img {
-  float: left;
-  height: 28px;
-  width: 162px;
-  margin-top: 30px;
-  margin-left: 12px; }
-
-.header .top .topSearch {
-  float: left;
-  height: 62px;
-  width: 514px;
-  margin-top: 22px;
-  margin-left: 135px;
-  position: relative; }
-  .header .top .topSearch .ShowSearchMatch {
-    top: 39px !important;
-    left: 0px !important;
-    z-index: 5;
-    display: none;
-    position: absolute;
-    top: 44px;
-    left: 321px;
-    height: 293px;
-    width: 461px; }
-    .header .top .topSearch .ShowSearchMatch ul {
-      height: 293px;
-      width: 461px;
-      background-color: #fff;
-      border: 1px solid #D4D4D4;
-      z-index: 7;
-      opacity: 0.8; }
-      .header .top .topSearch .ShowSearchMatch ul li {
-        height: 29px;
-        width: 461px;
-        font-size: 12px;
-        line-height: 29px;
-        list-style: none; }
-
-.header .top .topSearch .container {
-  width: 510px;
-  height: 35px;
-  position: relative;
-  border: 2px solid #333333; }
-
-.header .top .topSearch .container input {
-  width: 430px;
-  height: 35px;
-  margin-left: 30px;
-  border: none;
-  outline: none; }
-
-.header .top .topSearch .container span {
-  display: inline-block;
-  position: absolute;
-  text-align: center; }
-
-.header .top .topSearch .container span:nth-of-type(1) {
-  height: 35px;
-  width: 30px;
-  left: 0px; }
-
-.header .top .topSearch .container span:nth-of-type(2) {
-  height: 35px;
-  width: 52px;
-  background: #333333;
-  right: 0; }
-
-.header .top .topSearch .container span:nth-of-type(2) i {
-  font-size: 26px !important;
-  color: #ffffff;
-  line-height: 35px; }
-
-.header .top .topSearch .container span:nth-of-type(1) i {
-  font-size: 12px !important;
-  color: #c8c8c8;
-  line-height: 35px; }
-
-.header .top .topSearch ul {
-  width: 480px;
-  height: 27px; }
-
-.header .top .topSearch ul li:nth-of-type(1) a {
-  color: #e31436; }
-
-.header .top .topSearch ul li {
-  float: left;
-  font-size: 12px;
-  padding: 0 8px;
-  line-height: 27px;
-  height: 27px;
-  list-style: none;
-  list-style-image: url(../images/litter.jpg);
-  list-style-position: inside; }
-
-.header .top .topSearch ul li:nth-of-type(1), .header .top .topSearch ul li:nth-of-type(9) {
-  list-style-image: none; }
-
-.header .top .topSearch ul li a {
-  color: #999999; }
-
-.header .top .topCart {
-  float: right;
-  height: 35px;
-  width: 108px;
-  border: 1px solid #dddddd;
-  margin-top: 22px;
-  border-radius: 4px;
-  text-align: center; }
-
-.header .top .topCart i {
-  line-height: 35px;
-  font-size: 14px !important;
-  color: #a9a9a9; }
-
-.header .top .topCart a {
-  color: #333333;
-  font-size: 12px; }
-
-.header .bottom {
-  height: 42px;
-  width: 1094px;
-  margin: 0 auto; }
-
-.header .bottom ul {
-  height: 42px;
-  width: 1035px; }
-
-.header .bottom ul li {
-  float: left;
-  line-height: 42px;
-  padding: 0 29px;
-  font-size: 12px; }
-
-.header .bottom ul li a {
-  color: #333333;
-  font-weight: bold; }
-
-.header .bottom ul li:nth-of-type(1) a i {
-  font-size: 12px !important;
-  color: #333333 !important;
-  margin-right: 5px; }
-
-.header .bottom ul li:nth-of-type(2) a {
-  color: #e41436; }
-
 .banner {
   position: relative;
   height: 400px;
-  border-top: 2px solid #333333; }
-
-.banner ul:nth-of-type(1) {
-  height: 400px; }
-
-.banner ul:nth-of-type(1) li a img {
-  height: 400px;
+  border-top: 2px solid #333333;
   width: 100%; }
 
-.banner ul:nth-of-type(2) {
+.banner .bannerList {
   position: absolute;
   top: 0;
   left: 93px;
@@ -344,7 +14,7 @@
   z-index: 2;
   opacity: 0.8; }
 
-.banner ul:nth-of-type(2) li {
+.banner .bannerList li {
   font-size: 12px;
   text-align: center;
   height: 36px;
@@ -353,20 +23,20 @@
   line-height: 36px;
   border-bottom: 1px solid #443e3e; }
 
-.banner ul:nth-of-type(2) li a {
+.banner .bannerList li a {
   color: #ffffff; }
 
-.banner ul:nth-of-type(2) li a i {
+.banner .bannerList li a i {
   color: #827f7f !important;
   font-size: 12px !important; }
 
-.banner ul:nth-of-type(2) li:nth-of-type(11) {
+.banner .bannerList li:nth-of-type(11) {
   border: none; }
 
-.banner ul:nth-of-type(2) li a i:nth-of-type(2) {
+.banner .bannerList li a i:nth-of-type(2) {
   margin-left: 5px; }
 
-.banner ul:nth-of-type(2) li a i:nth-of-type(1) {
+.banner .bannerList li a i:nth-of-type(1) {
   margin-right: 5px; }
 
 .alertBanner {
@@ -469,6 +139,8 @@
         height: 190px;
         border-bottom: 1px solid #eaeaea;
         width: 434px; }
+        .dailyLimit .dailyLimitBottom selection dl dt:hover img {
+          opacity: 0.5; }
         .dailyLimit .dailyLimitBottom selection dl dt {
           float: left;
           width: 204px;
@@ -593,6 +265,8 @@
       background: #ffffff;
       text-align: center;
       overflow: hidden; }
+      .dailyNew .dailyNewBottom dl dt:hover img {
+        opacity: 0.5; }
       .dailyNew .dailyNewBottom dl dt {
         height: 157px;
         width: 181px;
@@ -740,6 +414,8 @@
       .popbrands .popbrandsBottom section ul {
         height: 275px;
         width: 913px; }
+        .popbrands .popbrandsBottom section ul li:hover .mask, .popbrands .popbrandsBottom section ul li:hover .action {
+          display: block; }
         .popbrands .popbrandsBottom section ul li {
           float: left;
           height: 136px;
@@ -855,6 +531,8 @@
         color: #666666; }
     .proMother .proMotherTop ul li:nth-of-type(1), .proMother .proMotherTop ul li:nth-of-type(2) {
       background: none; }
+    .proMother .proMotherTop ul li:hover a {
+      text-decoration: underline; }
     .proMother .proMotherTop ul li:nth-of-type(3) a, .proMother .proMotherTop ul li:nth-of-type(7) a {
       color: #e31436; }
     .proMother .proMotherTop p a {
@@ -875,6 +553,10 @@
         position: absolute;
         left: 26px;
         top: 24px; }
+        .proMother .proMotherMiddle aside:nth-of-type(1) ul li:hover {
+          background: gainsboro; }
+          .proMother .proMotherMiddle aside:nth-of-type(1) ul li:hover a {
+            color: #FF0000; }
         .proMother .proMotherMiddle aside:nth-of-type(1) ul li {
           float: left;
           width: 58px;
@@ -895,11 +577,12 @@
       .proMother .proMotherMiddle section .content {
         float: left;
         height: 440px;
-        width: 600px;
-        background: saddlebrown; }
+        width: 600px; }
         .proMother .proMotherMiddle section .content ul {
           height: 440px;
           width: 600px; }
+          .proMother .proMotherMiddle section .content ul li:hover {
+            opacity: 0.5; }
           .proMother .proMotherMiddle section .content ul li {
             border: 1px solid #eaeaea;
             float: left;
@@ -933,48 +616,53 @@
           margin-left: 30px;
           font-weight: normal;
           color: #333333; }
-        .proMother .proMotherMiddle section .aside .carousel {
+        .proMother .proMotherMiddle section .aside .CArousel {
           clear: both;
           height: 368px;
-          width: 248px; }
-          .proMother .proMotherMiddle section .aside .carousel ul {
+          width: 248px;
+          position: relative; }
+          .proMother .proMotherMiddle section .aside .CArousel ul:nth-of-type(1) {
+            display: block; }
+          .proMother .proMotherMiddle section .aside .CArousel ul {
+            position: absolute;
             height: 368px;
             width: 248px;
-            overflow: hidden; }
-            .proMother .proMotherMiddle section .aside .carousel ul li {
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            display: none; }
+            .proMother .proMotherMiddle section .aside .CArousel ul li {
               width: 200px;
               height: 90px;
               font-size: 12px;
               margin: 0 34px;
               border-bottom: 1px dashed #eaeaea;
               overflow: hidden; }
-              .proMother .proMotherMiddle section .aside .carousel ul li dl {
+              .proMother .proMotherMiddle section .aside .CArousel ul li dl {
                 margin-top: 8px;
                 width: 200px;
                 height: 90px; }
-                .proMother .proMotherMiddle section .aside .carousel ul li dl dt {
+                .proMother .proMotherMiddle section .aside .CArousel ul li dl dt {
                   float: left; }
-                .proMother .proMotherMiddle section .aside .carousel ul li dl dd {
+                .proMother .proMotherMiddle section .aside .CArousel ul li dl dd {
                   float: left;
                   margin-left: 5px; }
-                  .proMother .proMotherMiddle section .aside .carousel ul li dl dd p a {
+                  .proMother .proMotherMiddle section .aside .CArousel ul li dl dd p:hover {
+                    text-decoration: underline; }
+                  .proMother .proMotherMiddle section .aside .CArousel ul li dl dd p a {
                     color: #666666; }
-                  .proMother .proMotherMiddle section .aside .carousel ul li dl dd p:nth-of-type(2) {
+                  .proMother .proMotherMiddle section .aside .CArousel ul li dl dd p:nth-of-type(2) {
                     margin-top: 10px; }
-                    .proMother .proMotherMiddle section .aside .carousel ul li dl dd p:nth-of-type(2) span:nth-of-type(1) {
+                    .proMother .proMotherMiddle section .aside .CArousel ul li dl dd p:nth-of-type(2) span:nth-of-type(1) {
                       color: #e71436;
                       font-size: 13px;
                       font-weight: bold; }
-                    .proMother .proMotherMiddle section .aside .carousel ul li dl dd p:nth-of-type(2) span:nth-of-type(2) {
+                    .proMother .proMotherMiddle section .aside .CArousel ul li dl dd p:nth-of-type(2) span:nth-of-type(2) {
                       color: #999999;
                       text-decoration: line-through;
                       margin-left: 8px; }
-            .proMother .proMotherMiddle section .aside .carousel ul li:nth-of-type(4) {
+            .proMother .proMotherMiddle section .aside .CArousel ul li:nth-of-type(4) {
               border-bottom: none; }
-        .proMother .proMotherMiddle section .aside .circle {
-          height: 20px;
-          width: 248px;
-          background: black; }
   .proMother .proMotherBottom {
     height: 100px;
     width: 1094px;
@@ -985,6 +673,10 @@
       width: 1094px; }
       .proMother .proMotherBottom ul li:nth-of-type(1) {
         margin-left: 0px; }
+      .proMother .proMotherBottom ul li:hover i {
+        display: block !important;
+        color: #D43F3A !important;
+        font-weight: bolder !important; }
       .proMother .proMotherBottom ul li {
         float: left;
         width: 121px;
@@ -1051,6 +743,8 @@
         color: #666666; }
     .proMakeUp .proMotherTop ul li:nth-of-type(1), .proMakeUp .proMotherTop ul li:nth-of-type(2) {
       background: none; }
+    .proMakeUp .proMotherTop ul li:hover a {
+      text-decoration: underline; }
     .proMakeUp .proMotherTop ul li:nth-of-type(3) a, .proMakeUp .proMotherTop ul li:nth-of-type(7) a {
       color: #e31436; }
     .proMakeUp .proMotherTop p a {
@@ -1071,6 +765,10 @@
         position: absolute;
         left: 26px;
         top: 24px; }
+        .proMakeUp .proMotherMiddle aside:nth-of-type(1) ul li:hover {
+          background: gainsboro; }
+          .proMakeUp .proMotherMiddle aside:nth-of-type(1) ul li:hover a {
+            color: #FF0000; }
         .proMakeUp .proMotherMiddle aside:nth-of-type(1) ul li {
           float: left;
           width: 58px;
@@ -1091,11 +789,12 @@
       .proMakeUp .proMotherMiddle section .content {
         float: left;
         height: 440px;
-        width: 600px;
-        background: saddlebrown; }
+        width: 600px; }
         .proMakeUp .proMotherMiddle section .content ul {
           height: 440px;
           width: 600px; }
+          .proMakeUp .proMotherMiddle section .content ul li:hover {
+            opacity: 0.5; }
           .proMakeUp .proMotherMiddle section .content ul li {
             border: 1px solid #eaeaea;
             float: left;
@@ -1129,48 +828,53 @@
           margin-left: 30px;
           font-weight: normal;
           color: #333333; }
-        .proMakeUp .proMotherMiddle section .aside .carousel {
+        .proMakeUp .proMotherMiddle section .aside .CArousel {
           clear: both;
           height: 368px;
-          width: 248px; }
-          .proMakeUp .proMotherMiddle section .aside .carousel ul {
+          width: 248px;
+          position: relative; }
+          .proMakeUp .proMotherMiddle section .aside .CArousel ul:nth-of-type(1) {
+            display: block; }
+          .proMakeUp .proMotherMiddle section .aside .CArousel ul {
+            position: absolute;
             height: 368px;
             width: 248px;
-            overflow: hidden; }
-            .proMakeUp .proMotherMiddle section .aside .carousel ul li {
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            display: none; }
+            .proMakeUp .proMotherMiddle section .aside .CArousel ul li {
               width: 200px;
               height: 90px;
               font-size: 12px;
               margin: 0 34px;
               border-bottom: 1px dashed #eaeaea;
               overflow: hidden; }
-              .proMakeUp .proMotherMiddle section .aside .carousel ul li dl {
+              .proMakeUp .proMotherMiddle section .aside .CArousel ul li dl {
                 margin-top: 8px;
                 width: 200px;
                 height: 90px; }
-                .proMakeUp .proMotherMiddle section .aside .carousel ul li dl dt {
+                .proMakeUp .proMotherMiddle section .aside .CArousel ul li dl dt {
                   float: left; }
-                .proMakeUp .proMotherMiddle section .aside .carousel ul li dl dd {
+                .proMakeUp .proMotherMiddle section .aside .CArousel ul li dl dd {
                   float: left;
                   margin-left: 5px; }
-                  .proMakeUp .proMotherMiddle section .aside .carousel ul li dl dd p a {
+                  .proMakeUp .proMotherMiddle section .aside .CArousel ul li dl dd p:hover {
+                    text-decoration: underline; }
+                  .proMakeUp .proMotherMiddle section .aside .CArousel ul li dl dd p a {
                     color: #666666; }
-                  .proMakeUp .proMotherMiddle section .aside .carousel ul li dl dd p:nth-of-type(2) {
+                  .proMakeUp .proMotherMiddle section .aside .CArousel ul li dl dd p:nth-of-type(2) {
                     margin-top: 10px; }
-                    .proMakeUp .proMotherMiddle section .aside .carousel ul li dl dd p:nth-of-type(2) span:nth-of-type(1) {
+                    .proMakeUp .proMotherMiddle section .aside .CArousel ul li dl dd p:nth-of-type(2) span:nth-of-type(1) {
                       color: #e71436;
                       font-size: 13px;
                       font-weight: bold; }
-                    .proMakeUp .proMotherMiddle section .aside .carousel ul li dl dd p:nth-of-type(2) span:nth-of-type(2) {
+                    .proMakeUp .proMotherMiddle section .aside .CArousel ul li dl dd p:nth-of-type(2) span:nth-of-type(2) {
                       color: #999999;
                       text-decoration: line-through;
                       margin-left: 8px; }
-            .proMakeUp .proMotherMiddle section .aside .carousel ul li:nth-of-type(4) {
+            .proMakeUp .proMotherMiddle section .aside .CArousel ul li:nth-of-type(4) {
               border-bottom: none; }
-        .proMakeUp .proMotherMiddle section .aside .circle {
-          height: 20px;
-          width: 248px;
-          background: black; }
   .proMakeUp .proMotherBottom {
     height: 100px;
     width: 1094px;
@@ -1181,6 +885,10 @@
       width: 1094px; }
       .proMakeUp .proMotherBottom ul li:nth-of-type(1) {
         margin-left: 0px; }
+      .proMakeUp .proMotherBottom ul li:hover i {
+        display: block !important;
+        color: #D43F3A !important;
+        font-weight: bolder !important; }
       .proMakeUp .proMotherBottom ul li {
         float: left;
         width: 121px;
@@ -1249,6 +957,8 @@
         color: #666666; }
     .proColth .proMotherTop ul li:nth-of-type(1), .proColth .proMotherTop ul li:nth-of-type(2) {
       background: none; }
+    .proColth .proMotherTop ul li:hover a {
+      text-decoration: underline; }
     .proColth .proMotherTop ul li:nth-of-type(3) a, .proColth .proMotherTop ul li:nth-of-type(7) a {
       color: #e31436; }
     .proColth .proMotherTop p a {
@@ -1269,6 +979,10 @@
         position: absolute;
         left: 26px;
         top: 24px; }
+        .proColth .proMotherMiddle aside:nth-of-type(1) ul li:hover {
+          background: gainsboro; }
+          .proColth .proMotherMiddle aside:nth-of-type(1) ul li:hover a {
+            color: #FF0000; }
         .proColth .proMotherMiddle aside:nth-of-type(1) ul li {
           float: left;
           width: 58px;
@@ -1289,11 +1003,12 @@
       .proColth .proMotherMiddle section .content {
         float: left;
         height: 440px;
-        width: 600px;
-        background: saddlebrown; }
+        width: 600px; }
         .proColth .proMotherMiddle section .content ul {
           height: 440px;
           width: 600px; }
+          .proColth .proMotherMiddle section .content ul li:hover {
+            opacity: 0.5; }
           .proColth .proMotherMiddle section .content ul li {
             border: 1px solid #eaeaea;
             float: left;
@@ -1327,48 +1042,53 @@
           margin-left: 30px;
           font-weight: normal;
           color: #333333; }
-        .proColth .proMotherMiddle section .aside .carousel {
+        .proColth .proMotherMiddle section .aside .CArousel {
           clear: both;
           height: 368px;
-          width: 248px; }
-          .proColth .proMotherMiddle section .aside .carousel ul {
+          width: 248px;
+          position: relative; }
+          .proColth .proMotherMiddle section .aside .CArousel ul:nth-of-type(1) {
+            display: block; }
+          .proColth .proMotherMiddle section .aside .CArousel ul {
+            position: absolute;
             height: 368px;
             width: 248px;
-            overflow: hidden; }
-            .proColth .proMotherMiddle section .aside .carousel ul li {
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            display: none; }
+            .proColth .proMotherMiddle section .aside .CArousel ul li {
               width: 200px;
               height: 90px;
               font-size: 12px;
               margin: 0 34px;
               border-bottom: 1px dashed #eaeaea;
               overflow: hidden; }
-              .proColth .proMotherMiddle section .aside .carousel ul li dl {
+              .proColth .proMotherMiddle section .aside .CArousel ul li dl {
                 margin-top: 8px;
                 width: 200px;
                 height: 90px; }
-                .proColth .proMotherMiddle section .aside .carousel ul li dl dt {
+                .proColth .proMotherMiddle section .aside .CArousel ul li dl dt {
                   float: left; }
-                .proColth .proMotherMiddle section .aside .carousel ul li dl dd {
+                .proColth .proMotherMiddle section .aside .CArousel ul li dl dd {
                   float: left;
                   margin-left: 5px; }
-                  .proColth .proMotherMiddle section .aside .carousel ul li dl dd p a {
+                  .proColth .proMotherMiddle section .aside .CArousel ul li dl dd p:hover {
+                    text-decoration: underline; }
+                  .proColth .proMotherMiddle section .aside .CArousel ul li dl dd p a {
                     color: #666666; }
-                  .proColth .proMotherMiddle section .aside .carousel ul li dl dd p:nth-of-type(2) {
+                  .proColth .proMotherMiddle section .aside .CArousel ul li dl dd p:nth-of-type(2) {
                     margin-top: 10px; }
-                    .proColth .proMotherMiddle section .aside .carousel ul li dl dd p:nth-of-type(2) span:nth-of-type(1) {
+                    .proColth .proMotherMiddle section .aside .CArousel ul li dl dd p:nth-of-type(2) span:nth-of-type(1) {
                       color: #e71436;
                       font-size: 13px;
                       font-weight: bold; }
-                    .proColth .proMotherMiddle section .aside .carousel ul li dl dd p:nth-of-type(2) span:nth-of-type(2) {
+                    .proColth .proMotherMiddle section .aside .CArousel ul li dl dd p:nth-of-type(2) span:nth-of-type(2) {
                       color: #999999;
                       text-decoration: line-through;
                       margin-left: 8px; }
-            .proColth .proMotherMiddle section .aside .carousel ul li:nth-of-type(4) {
+            .proColth .proMotherMiddle section .aside .CArousel ul li:nth-of-type(4) {
               border-bottom: none; }
-        .proColth .proMotherMiddle section .aside .circle {
-          height: 20px;
-          width: 248px;
-          background: black; }
   .proColth .proMotherBottom {
     height: 100px;
     width: 1094px;
@@ -1379,6 +1099,10 @@
       width: 1094px; }
       .proColth .proMotherBottom ul li:nth-of-type(1) {
         margin-left: 0px; }
+      .proColth .proMotherBottom ul li:hover i {
+        display: block !important;
+        color: #D43F3A !important;
+        font-weight: bolder !important; }
       .proColth .proMotherBottom ul li {
         float: left;
         width: 121px;
@@ -1447,6 +1171,8 @@
         color: #666666; }
     .proLiveHome .proMotherTop ul li:nth-of-type(1), .proLiveHome .proMotherTop ul li:nth-of-type(2) {
       background: none; }
+    .proLiveHome .proMotherTop ul li:hover a {
+      text-decoration: underline; }
     .proLiveHome .proMotherTop ul li:nth-of-type(3) a, .proLiveHome .proMotherTop ul li:nth-of-type(7) a {
       color: #e31436; }
     .proLiveHome .proMotherTop p a {
@@ -1467,6 +1193,10 @@
         position: absolute;
         left: 26px;
         top: 24px; }
+        .proLiveHome .proMotherMiddle aside:nth-of-type(1) ul li:hover {
+          background: gainsboro; }
+          .proLiveHome .proMotherMiddle aside:nth-of-type(1) ul li:hover a {
+            color: #FF0000; }
         .proLiveHome .proMotherMiddle aside:nth-of-type(1) ul li {
           float: left;
           width: 58px;
@@ -1487,11 +1217,12 @@
       .proLiveHome .proMotherMiddle section .content {
         float: left;
         height: 440px;
-        width: 600px;
-        background: saddlebrown; }
+        width: 600px; }
         .proLiveHome .proMotherMiddle section .content ul {
           height: 440px;
           width: 600px; }
+          .proLiveHome .proMotherMiddle section .content ul li:hover {
+            opacity: 0.5; }
           .proLiveHome .proMotherMiddle section .content ul li {
             border: 1px solid #eaeaea;
             float: left;
@@ -1525,48 +1256,53 @@
           margin-left: 30px;
           font-weight: normal;
           color: #333333; }
-        .proLiveHome .proMotherMiddle section .aside .carousel {
+        .proLiveHome .proMotherMiddle section .aside .CArousel {
           clear: both;
           height: 368px;
-          width: 248px; }
-          .proLiveHome .proMotherMiddle section .aside .carousel ul {
+          width: 248px;
+          position: relative; }
+          .proLiveHome .proMotherMiddle section .aside .CArousel ul:nth-of-type(1) {
+            display: block; }
+          .proLiveHome .proMotherMiddle section .aside .CArousel ul {
+            position: absolute;
             height: 368px;
             width: 248px;
-            overflow: hidden; }
-            .proLiveHome .proMotherMiddle section .aside .carousel ul li {
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            display: none; }
+            .proLiveHome .proMotherMiddle section .aside .CArousel ul li {
               width: 200px;
               height: 90px;
               font-size: 12px;
               margin: 0 34px;
               border-bottom: 1px dashed #eaeaea;
               overflow: hidden; }
-              .proLiveHome .proMotherMiddle section .aside .carousel ul li dl {
+              .proLiveHome .proMotherMiddle section .aside .CArousel ul li dl {
                 margin-top: 8px;
                 width: 200px;
                 height: 90px; }
-                .proLiveHome .proMotherMiddle section .aside .carousel ul li dl dt {
+                .proLiveHome .proMotherMiddle section .aside .CArousel ul li dl dt {
                   float: left; }
-                .proLiveHome .proMotherMiddle section .aside .carousel ul li dl dd {
+                .proLiveHome .proMotherMiddle section .aside .CArousel ul li dl dd {
                   float: left;
                   margin-left: 5px; }
-                  .proLiveHome .proMotherMiddle section .aside .carousel ul li dl dd p a {
+                  .proLiveHome .proMotherMiddle section .aside .CArousel ul li dl dd p:hover {
+                    text-decoration: underline; }
+                  .proLiveHome .proMotherMiddle section .aside .CArousel ul li dl dd p a {
                     color: #666666; }
-                  .proLiveHome .proMotherMiddle section .aside .carousel ul li dl dd p:nth-of-type(2) {
+                  .proLiveHome .proMotherMiddle section .aside .CArousel ul li dl dd p:nth-of-type(2) {
                     margin-top: 10px; }
-                    .proLiveHome .proMotherMiddle section .aside .carousel ul li dl dd p:nth-of-type(2) span:nth-of-type(1) {
+                    .proLiveHome .proMotherMiddle section .aside .CArousel ul li dl dd p:nth-of-type(2) span:nth-of-type(1) {
                       color: #e71436;
                       font-size: 13px;
                       font-weight: bold; }
-                    .proLiveHome .proMotherMiddle section .aside .carousel ul li dl dd p:nth-of-type(2) span:nth-of-type(2) {
+                    .proLiveHome .proMotherMiddle section .aside .CArousel ul li dl dd p:nth-of-type(2) span:nth-of-type(2) {
                       color: #999999;
                       text-decoration: line-through;
                       margin-left: 8px; }
-            .proLiveHome .proMotherMiddle section .aside .carousel ul li:nth-of-type(4) {
+            .proLiveHome .proMotherMiddle section .aside .CArousel ul li:nth-of-type(4) {
               border-bottom: none; }
-        .proLiveHome .proMotherMiddle section .aside .circle {
-          height: 20px;
-          width: 248px;
-          background: black; }
   .proLiveHome .proMotherBottom {
     height: 100px;
     width: 1094px;
@@ -1577,6 +1313,10 @@
       width: 1094px; }
       .proLiveHome .proMotherBottom ul li:nth-of-type(1) {
         margin-left: 0px; }
+      .proLiveHome .proMotherBottom ul li:hover i {
+        display: block !important;
+        color: #D43F3A !important;
+        font-weight: bolder !important; }
       .proLiveHome .proMotherBottom ul li {
         float: left;
         width: 121px;
@@ -1645,6 +1385,8 @@
         color: #666666; }
     .proHealth .proMotherTop ul li:nth-of-type(1), .proHealth .proMotherTop ul li:nth-of-type(2) {
       background: none; }
+    .proHealth .proMotherTop ul li:hover a {
+      text-decoration: underline; }
     .proHealth .proMotherTop ul li:nth-of-type(3) a, .proHealth .proMotherTop ul li:nth-of-type(7) a {
       color: #e31436; }
     .proHealth .proMotherTop p a {
@@ -1665,6 +1407,10 @@
         position: absolute;
         left: 26px;
         top: 24px; }
+        .proHealth .proMotherMiddle aside:nth-of-type(1) ul li:hover {
+          background: gainsboro; }
+          .proHealth .proMotherMiddle aside:nth-of-type(1) ul li:hover a {
+            color: #FF0000; }
         .proHealth .proMotherMiddle aside:nth-of-type(1) ul li {
           float: left;
           width: 58px;
@@ -1685,11 +1431,12 @@
       .proHealth .proMotherMiddle section .content {
         float: left;
         height: 440px;
-        width: 600px;
-        background: saddlebrown; }
+        width: 600px; }
         .proHealth .proMotherMiddle section .content ul {
           height: 440px;
           width: 600px; }
+          .proHealth .proMotherMiddle section .content ul li:hover {
+            opacity: 0.5; }
           .proHealth .proMotherMiddle section .content ul li {
             border: 1px solid #eaeaea;
             float: left;
@@ -1723,48 +1470,53 @@
           margin-left: 30px;
           font-weight: normal;
           color: #333333; }
-        .proHealth .proMotherMiddle section .aside .carousel {
+        .proHealth .proMotherMiddle section .aside .CArousel {
           clear: both;
           height: 368px;
-          width: 248px; }
-          .proHealth .proMotherMiddle section .aside .carousel ul {
+          width: 248px;
+          position: relative; }
+          .proHealth .proMotherMiddle section .aside .CArousel ul:nth-of-type(1) {
+            display: block; }
+          .proHealth .proMotherMiddle section .aside .CArousel ul {
+            position: absolute;
             height: 368px;
             width: 248px;
-            overflow: hidden; }
-            .proHealth .proMotherMiddle section .aside .carousel ul li {
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            display: none; }
+            .proHealth .proMotherMiddle section .aside .CArousel ul li {
               width: 200px;
               height: 90px;
               font-size: 12px;
               margin: 0 34px;
               border-bottom: 1px dashed #eaeaea;
               overflow: hidden; }
-              .proHealth .proMotherMiddle section .aside .carousel ul li dl {
+              .proHealth .proMotherMiddle section .aside .CArousel ul li dl {
                 margin-top: 8px;
                 width: 200px;
                 height: 90px; }
-                .proHealth .proMotherMiddle section .aside .carousel ul li dl dt {
+                .proHealth .proMotherMiddle section .aside .CArousel ul li dl dt {
                   float: left; }
-                .proHealth .proMotherMiddle section .aside .carousel ul li dl dd {
+                .proHealth .proMotherMiddle section .aside .CArousel ul li dl dd {
                   float: left;
                   margin-left: 5px; }
-                  .proHealth .proMotherMiddle section .aside .carousel ul li dl dd p a {
+                  .proHealth .proMotherMiddle section .aside .CArousel ul li dl dd p:hover {
+                    text-decoration: underline; }
+                  .proHealth .proMotherMiddle section .aside .CArousel ul li dl dd p a {
                     color: #666666; }
-                  .proHealth .proMotherMiddle section .aside .carousel ul li dl dd p:nth-of-type(2) {
+                  .proHealth .proMotherMiddle section .aside .CArousel ul li dl dd p:nth-of-type(2) {
                     margin-top: 10px; }
-                    .proHealth .proMotherMiddle section .aside .carousel ul li dl dd p:nth-of-type(2) span:nth-of-type(1) {
+                    .proHealth .proMotherMiddle section .aside .CArousel ul li dl dd p:nth-of-type(2) span:nth-of-type(1) {
                       color: #e71436;
                       font-size: 13px;
                       font-weight: bold; }
-                    .proHealth .proMotherMiddle section .aside .carousel ul li dl dd p:nth-of-type(2) span:nth-of-type(2) {
+                    .proHealth .proMotherMiddle section .aside .CArousel ul li dl dd p:nth-of-type(2) span:nth-of-type(2) {
                       color: #999999;
                       text-decoration: line-through;
                       margin-left: 8px; }
-            .proHealth .proMotherMiddle section .aside .carousel ul li:nth-of-type(4) {
+            .proHealth .proMotherMiddle section .aside .CArousel ul li:nth-of-type(4) {
               border-bottom: none; }
-        .proHealth .proMotherMiddle section .aside .circle {
-          height: 20px;
-          width: 248px;
-          background: black; }
   .proHealth .proMotherBottom {
     height: 100px;
     width: 1094px;
@@ -1775,6 +1527,10 @@
       width: 1094px; }
       .proHealth .proMotherBottom ul li:nth-of-type(1) {
         margin-left: 0px; }
+      .proHealth .proMotherBottom ul li:hover i {
+        display: block !important;
+        color: #D43F3A !important;
+        font-weight: bolder !important; }
       .proHealth .proMotherBottom ul li {
         float: left;
         width: 121px;
@@ -1843,6 +1599,8 @@
         color: #666666; }
     .proSeaOut .proMotherTop ul li:nth-of-type(1), .proSeaOut .proMotherTop ul li:nth-of-type(2) {
       background: none; }
+    .proSeaOut .proMotherTop ul li:hover a {
+      text-decoration: underline; }
     .proSeaOut .proMotherTop ul li:nth-of-type(3) a, .proSeaOut .proMotherTop ul li:nth-of-type(7) a {
       color: #e31436; }
     .proSeaOut .proMotherTop p a {
@@ -1863,6 +1621,10 @@
         position: absolute;
         left: 26px;
         top: 24px; }
+        .proSeaOut .proMotherMiddle aside:nth-of-type(1) ul li:hover {
+          background: gainsboro; }
+          .proSeaOut .proMotherMiddle aside:nth-of-type(1) ul li:hover a {
+            color: #FF0000; }
         .proSeaOut .proMotherMiddle aside:nth-of-type(1) ul li {
           float: left;
           width: 58px;
@@ -1883,11 +1645,12 @@
       .proSeaOut .proMotherMiddle section .content {
         float: left;
         height: 440px;
-        width: 600px;
-        background: saddlebrown; }
+        width: 600px; }
         .proSeaOut .proMotherMiddle section .content ul {
           height: 440px;
           width: 600px; }
+          .proSeaOut .proMotherMiddle section .content ul li:hover {
+            opacity: 0.5; }
           .proSeaOut .proMotherMiddle section .content ul li {
             border: 1px solid #eaeaea;
             float: left;
@@ -1921,48 +1684,53 @@
           margin-left: 30px;
           font-weight: normal;
           color: #333333; }
-        .proSeaOut .proMotherMiddle section .aside .carousel {
+        .proSeaOut .proMotherMiddle section .aside .CArousel {
           clear: both;
           height: 368px;
-          width: 248px; }
-          .proSeaOut .proMotherMiddle section .aside .carousel ul {
+          width: 248px;
+          position: relative; }
+          .proSeaOut .proMotherMiddle section .aside .CArousel ul:nth-of-type(1) {
+            display: block; }
+          .proSeaOut .proMotherMiddle section .aside .CArousel ul {
+            position: absolute;
             height: 368px;
             width: 248px;
-            overflow: hidden; }
-            .proSeaOut .proMotherMiddle section .aside .carousel ul li {
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            display: none; }
+            .proSeaOut .proMotherMiddle section .aside .CArousel ul li {
               width: 200px;
               height: 90px;
               font-size: 12px;
               margin: 0 34px;
               border-bottom: 1px dashed #eaeaea;
               overflow: hidden; }
-              .proSeaOut .proMotherMiddle section .aside .carousel ul li dl {
+              .proSeaOut .proMotherMiddle section .aside .CArousel ul li dl {
                 margin-top: 8px;
                 width: 200px;
                 height: 90px; }
-                .proSeaOut .proMotherMiddle section .aside .carousel ul li dl dt {
+                .proSeaOut .proMotherMiddle section .aside .CArousel ul li dl dt {
                   float: left; }
-                .proSeaOut .proMotherMiddle section .aside .carousel ul li dl dd {
+                .proSeaOut .proMotherMiddle section .aside .CArousel ul li dl dd {
                   float: left;
                   margin-left: 5px; }
-                  .proSeaOut .proMotherMiddle section .aside .carousel ul li dl dd p a {
+                  .proSeaOut .proMotherMiddle section .aside .CArousel ul li dl dd p:hover {
+                    text-decoration: underline; }
+                  .proSeaOut .proMotherMiddle section .aside .CArousel ul li dl dd p a {
                     color: #666666; }
-                  .proSeaOut .proMotherMiddle section .aside .carousel ul li dl dd p:nth-of-type(2) {
+                  .proSeaOut .proMotherMiddle section .aside .CArousel ul li dl dd p:nth-of-type(2) {
                     margin-top: 10px; }
-                    .proSeaOut .proMotherMiddle section .aside .carousel ul li dl dd p:nth-of-type(2) span:nth-of-type(1) {
+                    .proSeaOut .proMotherMiddle section .aside .CArousel ul li dl dd p:nth-of-type(2) span:nth-of-type(1) {
                       color: #e71436;
                       font-size: 13px;
                       font-weight: bold; }
-                    .proSeaOut .proMotherMiddle section .aside .carousel ul li dl dd p:nth-of-type(2) span:nth-of-type(2) {
+                    .proSeaOut .proMotherMiddle section .aside .CArousel ul li dl dd p:nth-of-type(2) span:nth-of-type(2) {
                       color: #999999;
                       text-decoration: line-through;
                       margin-left: 8px; }
-            .proSeaOut .proMotherMiddle section .aside .carousel ul li:nth-of-type(4) {
+            .proSeaOut .proMotherMiddle section .aside .CArousel ul li:nth-of-type(4) {
               border-bottom: none; }
-        .proSeaOut .proMotherMiddle section .aside .circle {
-          height: 20px;
-          width: 248px;
-          background: black; }
   .proSeaOut .proMotherBottom {
     height: 100px;
     width: 1094px;
@@ -1973,6 +1741,10 @@
       width: 1094px; }
       .proSeaOut .proMotherBottom ul li:nth-of-type(1) {
         margin-left: 0px; }
+      .proSeaOut .proMotherBottom ul li:hover i {
+        display: block !important;
+        color: #D43F3A !important;
+        font-weight: bolder !important; }
       .proSeaOut .proMotherBottom ul li {
         float: left;
         width: 121px;
@@ -2043,6 +1815,8 @@
         color: #666666; }
     .proElec .proMotherTop ul li:nth-of-type(1), .proElec .proMotherTop ul li:nth-of-type(2) {
       background: none; }
+    .proElec .proMotherTop ul li:hover a {
+      text-decoration: underline; }
     .proElec .proMotherTop ul li:nth-of-type(3) a, .proElec .proMotherTop ul li:nth-of-type(7) a {
       color: #e31436; }
     .proElec .proMotherTop p a {
@@ -2063,6 +1837,10 @@
         position: absolute;
         left: 26px;
         top: 24px; }
+        .proElec .proMotherMiddle aside:nth-of-type(1) ul li:hover {
+          background: gainsboro; }
+          .proElec .proMotherMiddle aside:nth-of-type(1) ul li:hover a {
+            color: #FF0000; }
         .proElec .proMotherMiddle aside:nth-of-type(1) ul li {
           float: left;
           width: 58px;
@@ -2083,11 +1861,12 @@
       .proElec .proMotherMiddle section .content {
         float: left;
         height: 440px;
-        width: 600px;
-        background: saddlebrown; }
+        width: 600px; }
         .proElec .proMotherMiddle section .content ul {
           height: 440px;
           width: 600px; }
+          .proElec .proMotherMiddle section .content ul li:hover {
+            opacity: 0.5; }
           .proElec .proMotherMiddle section .content ul li {
             border: 1px solid #eaeaea;
             float: left;
@@ -2121,48 +1900,53 @@
           margin-left: 30px;
           font-weight: normal;
           color: #333333; }
-        .proElec .proMotherMiddle section .aside .carousel {
+        .proElec .proMotherMiddle section .aside .CArousel {
           clear: both;
           height: 368px;
-          width: 248px; }
-          .proElec .proMotherMiddle section .aside .carousel ul {
+          width: 248px;
+          position: relative; }
+          .proElec .proMotherMiddle section .aside .CArousel ul:nth-of-type(1) {
+            display: block; }
+          .proElec .proMotherMiddle section .aside .CArousel ul {
+            position: absolute;
             height: 368px;
             width: 248px;
-            overflow: hidden; }
-            .proElec .proMotherMiddle section .aside .carousel ul li {
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            display: none; }
+            .proElec .proMotherMiddle section .aside .CArousel ul li {
               width: 200px;
               height: 90px;
               font-size: 12px;
               margin: 0 34px;
               border-bottom: 1px dashed #eaeaea;
               overflow: hidden; }
-              .proElec .proMotherMiddle section .aside .carousel ul li dl {
+              .proElec .proMotherMiddle section .aside .CArousel ul li dl {
                 margin-top: 8px;
                 width: 200px;
                 height: 90px; }
-                .proElec .proMotherMiddle section .aside .carousel ul li dl dt {
+                .proElec .proMotherMiddle section .aside .CArousel ul li dl dt {
                   float: left; }
-                .proElec .proMotherMiddle section .aside .carousel ul li dl dd {
+                .proElec .proMotherMiddle section .aside .CArousel ul li dl dd {
                   float: left;
                   margin-left: 5px; }
-                  .proElec .proMotherMiddle section .aside .carousel ul li dl dd p a {
+                  .proElec .proMotherMiddle section .aside .CArousel ul li dl dd p:hover {
+                    text-decoration: underline; }
+                  .proElec .proMotherMiddle section .aside .CArousel ul li dl dd p a {
                     color: #666666; }
-                  .proElec .proMotherMiddle section .aside .carousel ul li dl dd p:nth-of-type(2) {
+                  .proElec .proMotherMiddle section .aside .CArousel ul li dl dd p:nth-of-type(2) {
                     margin-top: 10px; }
-                    .proElec .proMotherMiddle section .aside .carousel ul li dl dd p:nth-of-type(2) span:nth-of-type(1) {
+                    .proElec .proMotherMiddle section .aside .CArousel ul li dl dd p:nth-of-type(2) span:nth-of-type(1) {
                       color: #e71436;
                       font-size: 13px;
                       font-weight: bold; }
-                    .proElec .proMotherMiddle section .aside .carousel ul li dl dd p:nth-of-type(2) span:nth-of-type(2) {
+                    .proElec .proMotherMiddle section .aside .CArousel ul li dl dd p:nth-of-type(2) span:nth-of-type(2) {
                       color: #999999;
                       text-decoration: line-through;
                       margin-left: 8px; }
-            .proElec .proMotherMiddle section .aside .carousel ul li:nth-of-type(4) {
+            .proElec .proMotherMiddle section .aside .CArousel ul li:nth-of-type(4) {
               border-bottom: none; }
-        .proElec .proMotherMiddle section .aside .circle {
-          height: 20px;
-          width: 248px;
-          background: black; }
   .proElec .proMotherBottom {
     height: 100px;
     width: 1094px;
@@ -2173,6 +1957,10 @@
       width: 1094px; }
       .proElec .proMotherBottom ul li:nth-of-type(1) {
         margin-left: 0px; }
+      .proElec .proMotherBottom ul li:hover i {
+        display: block !important;
+        color: #D43F3A !important;
+        font-weight: bolder !important; }
       .proElec .proMotherBottom ul li {
         float: left;
         width: 121px;
@@ -2243,6 +2031,8 @@
         color: #666666; }
     .proFood .proMotherTop ul li:nth-of-type(1), .proFood .proMotherTop ul li:nth-of-type(2) {
       background: none; }
+    .proFood .proMotherTop ul li:hover a {
+      text-decoration: underline; }
     .proFood .proMotherTop ul li:nth-of-type(3) a, .proFood .proMotherTop ul li:nth-of-type(7) a {
       color: #e31436; }
     .proFood .proMotherTop p a {
@@ -2263,6 +2053,10 @@
         position: absolute;
         left: 26px;
         top: 24px; }
+        .proFood .proMotherMiddle aside:nth-of-type(1) ul li:hover {
+          background: gainsboro; }
+          .proFood .proMotherMiddle aside:nth-of-type(1) ul li:hover a {
+            color: #FF0000; }
         .proFood .proMotherMiddle aside:nth-of-type(1) ul li {
           float: left;
           width: 58px;
@@ -2283,11 +2077,12 @@
       .proFood .proMotherMiddle section .content {
         float: left;
         height: 440px;
-        width: 600px;
-        background: saddlebrown; }
+        width: 600px; }
         .proFood .proMotherMiddle section .content ul {
           height: 440px;
           width: 600px; }
+          .proFood .proMotherMiddle section .content ul li:hover {
+            opacity: 0.5; }
           .proFood .proMotherMiddle section .content ul li {
             border: 1px solid #eaeaea;
             float: left;
@@ -2321,48 +2116,53 @@
           margin-left: 30px;
           font-weight: normal;
           color: #333333; }
-        .proFood .proMotherMiddle section .aside .carousel {
+        .proFood .proMotherMiddle section .aside .CArousel {
           clear: both;
           height: 368px;
-          width: 248px; }
-          .proFood .proMotherMiddle section .aside .carousel ul {
+          width: 248px;
+          position: relative; }
+          .proFood .proMotherMiddle section .aside .CArousel ul:nth-of-type(1) {
+            display: block; }
+          .proFood .proMotherMiddle section .aside .CArousel ul {
+            position: absolute;
             height: 368px;
             width: 248px;
-            overflow: hidden; }
-            .proFood .proMotherMiddle section .aside .carousel ul li {
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            display: none; }
+            .proFood .proMotherMiddle section .aside .CArousel ul li {
               width: 200px;
               height: 90px;
               font-size: 12px;
               margin: 0 34px;
               border-bottom: 1px dashed #eaeaea;
               overflow: hidden; }
-              .proFood .proMotherMiddle section .aside .carousel ul li dl {
+              .proFood .proMotherMiddle section .aside .CArousel ul li dl {
                 margin-top: 8px;
                 width: 200px;
                 height: 90px; }
-                .proFood .proMotherMiddle section .aside .carousel ul li dl dt {
+                .proFood .proMotherMiddle section .aside .CArousel ul li dl dt {
                   float: left; }
-                .proFood .proMotherMiddle section .aside .carousel ul li dl dd {
+                .proFood .proMotherMiddle section .aside .CArousel ul li dl dd {
                   float: left;
                   margin-left: 5px; }
-                  .proFood .proMotherMiddle section .aside .carousel ul li dl dd p a {
+                  .proFood .proMotherMiddle section .aside .CArousel ul li dl dd p:hover {
+                    text-decoration: underline; }
+                  .proFood .proMotherMiddle section .aside .CArousel ul li dl dd p a {
                     color: #666666; }
-                  .proFood .proMotherMiddle section .aside .carousel ul li dl dd p:nth-of-type(2) {
+                  .proFood .proMotherMiddle section .aside .CArousel ul li dl dd p:nth-of-type(2) {
                     margin-top: 10px; }
-                    .proFood .proMotherMiddle section .aside .carousel ul li dl dd p:nth-of-type(2) span:nth-of-type(1) {
+                    .proFood .proMotherMiddle section .aside .CArousel ul li dl dd p:nth-of-type(2) span:nth-of-type(1) {
                       color: #e71436;
                       font-size: 13px;
                       font-weight: bold; }
-                    .proFood .proMotherMiddle section .aside .carousel ul li dl dd p:nth-of-type(2) span:nth-of-type(2) {
+                    .proFood .proMotherMiddle section .aside .CArousel ul li dl dd p:nth-of-type(2) span:nth-of-type(2) {
                       color: #999999;
                       text-decoration: line-through;
                       margin-left: 8px; }
-            .proFood .proMotherMiddle section .aside .carousel ul li:nth-of-type(4) {
+            .proFood .proMotherMiddle section .aside .CArousel ul li:nth-of-type(4) {
               border-bottom: none; }
-        .proFood .proMotherMiddle section .aside .circle {
-          height: 20px;
-          width: 248px;
-          background: black; }
   .proFood .proMotherBottom {
     height: 100px;
     width: 1094px;
@@ -2373,6 +2173,10 @@
       width: 1094px; }
       .proFood .proMotherBottom ul li:nth-of-type(1) {
         margin-left: 0px; }
+      .proFood .proMotherBottom ul li:hover i {
+        display: block !important;
+        color: #D43F3A !important;
+        font-weight: bolder !important; }
       .proFood .proMotherBottom ul li {
         float: left;
         width: 121px;
@@ -2443,6 +2247,8 @@
         color: #666666; }
     .proRunOut .proMotherTop ul li:nth-of-type(1), .proRunOut .proMotherTop ul li:nth-of-type(2) {
       background: none; }
+    .proRunOut .proMotherTop ul li:hover a {
+      text-decoration: underline; }
     .proRunOut .proMotherTop ul li:nth-of-type(3) a, .proRunOut .proMotherTop ul li:nth-of-type(7) a {
       color: #e31436; }
     .proRunOut .proMotherTop p a {
@@ -2463,6 +2269,10 @@
         position: absolute;
         left: 26px;
         top: 24px; }
+        .proRunOut .proMotherMiddle aside:nth-of-type(1) ul li:hover {
+          background: gainsboro; }
+          .proRunOut .proMotherMiddle aside:nth-of-type(1) ul li:hover a {
+            color: #FF0000; }
         .proRunOut .proMotherMiddle aside:nth-of-type(1) ul li {
           float: left;
           width: 58px;
@@ -2483,11 +2293,12 @@
       .proRunOut .proMotherMiddle section .content {
         float: left;
         height: 440px;
-        width: 600px;
-        background: saddlebrown; }
+        width: 600px; }
         .proRunOut .proMotherMiddle section .content ul {
           height: 440px;
           width: 600px; }
+          .proRunOut .proMotherMiddle section .content ul li:hover {
+            opacity: 0.5; }
           .proRunOut .proMotherMiddle section .content ul li {
             border: 1px solid #eaeaea;
             float: left;
@@ -2521,48 +2332,53 @@
           margin-left: 30px;
           font-weight: normal;
           color: #333333; }
-        .proRunOut .proMotherMiddle section .aside .carousel {
+        .proRunOut .proMotherMiddle section .aside .CArousel {
           clear: both;
           height: 368px;
-          width: 248px; }
-          .proRunOut .proMotherMiddle section .aside .carousel ul {
+          width: 248px;
+          position: relative; }
+          .proRunOut .proMotherMiddle section .aside .CArousel ul:nth-of-type(1) {
+            display: block; }
+          .proRunOut .proMotherMiddle section .aside .CArousel ul {
+            position: absolute;
             height: 368px;
             width: 248px;
-            overflow: hidden; }
-            .proRunOut .proMotherMiddle section .aside .carousel ul li {
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            display: none; }
+            .proRunOut .proMotherMiddle section .aside .CArousel ul li {
               width: 200px;
               height: 90px;
               font-size: 12px;
               margin: 0 34px;
               border-bottom: 1px dashed #eaeaea;
               overflow: hidden; }
-              .proRunOut .proMotherMiddle section .aside .carousel ul li dl {
+              .proRunOut .proMotherMiddle section .aside .CArousel ul li dl {
                 margin-top: 8px;
                 width: 200px;
                 height: 90px; }
-                .proRunOut .proMotherMiddle section .aside .carousel ul li dl dt {
+                .proRunOut .proMotherMiddle section .aside .CArousel ul li dl dt {
                   float: left; }
-                .proRunOut .proMotherMiddle section .aside .carousel ul li dl dd {
+                .proRunOut .proMotherMiddle section .aside .CArousel ul li dl dd {
                   float: left;
                   margin-left: 5px; }
-                  .proRunOut .proMotherMiddle section .aside .carousel ul li dl dd p a {
+                  .proRunOut .proMotherMiddle section .aside .CArousel ul li dl dd p:hover {
+                    text-decoration: underline; }
+                  .proRunOut .proMotherMiddle section .aside .CArousel ul li dl dd p a {
                     color: #666666; }
-                  .proRunOut .proMotherMiddle section .aside .carousel ul li dl dd p:nth-of-type(2) {
+                  .proRunOut .proMotherMiddle section .aside .CArousel ul li dl dd p:nth-of-type(2) {
                     margin-top: 10px; }
-                    .proRunOut .proMotherMiddle section .aside .carousel ul li dl dd p:nth-of-type(2) span:nth-of-type(1) {
+                    .proRunOut .proMotherMiddle section .aside .CArousel ul li dl dd p:nth-of-type(2) span:nth-of-type(1) {
                       color: #e71436;
                       font-size: 13px;
                       font-weight: bold; }
-                    .proRunOut .proMotherMiddle section .aside .carousel ul li dl dd p:nth-of-type(2) span:nth-of-type(2) {
+                    .proRunOut .proMotherMiddle section .aside .CArousel ul li dl dd p:nth-of-type(2) span:nth-of-type(2) {
                       color: #999999;
                       text-decoration: line-through;
                       margin-left: 8px; }
-            .proRunOut .proMotherMiddle section .aside .carousel ul li:nth-of-type(4) {
+            .proRunOut .proMotherMiddle section .aside .CArousel ul li:nth-of-type(4) {
               border-bottom: none; }
-        .proRunOut .proMotherMiddle section .aside .circle {
-          height: 20px;
-          width: 248px;
-          background: black; }
   .proRunOut .proMotherBottom {
     height: 100px;
     width: 1094px;
@@ -2573,6 +2389,10 @@
       width: 1094px; }
       .proRunOut .proMotherBottom ul li:nth-of-type(1) {
         margin-left: 0px; }
+      .proRunOut .proMotherBottom ul li:hover i {
+        display: block !important;
+        color: #D43F3A !important;
+        font-weight: bolder !important; }
       .proRunOut .proMotherBottom ul li {
         float: left;
         width: 121px;
@@ -2636,6 +2456,8 @@
         color: #666666; }
     .proGuss .proMotherTop ul li:nth-of-type(1), .proGuss .proMotherTop ul li:nth-of-type(2) {
       background: none; }
+    .proGuss .proMotherTop ul li:hover a {
+      text-decoration: underline; }
     .proGuss .proMotherTop ul li:nth-of-type(3) a, .proGuss .proMotherTop ul li:nth-of-type(7) a {
       color: #e31436; }
     .proGuss .proMotherTop p a {
@@ -2656,6 +2478,10 @@
         position: absolute;
         left: 26px;
         top: 24px; }
+        .proGuss .proMotherMiddle aside:nth-of-type(1) ul li:hover {
+          background: gainsboro; }
+          .proGuss .proMotherMiddle aside:nth-of-type(1) ul li:hover a {
+            color: #FF0000; }
         .proGuss .proMotherMiddle aside:nth-of-type(1) ul li {
           float: left;
           width: 58px;
@@ -2676,11 +2502,12 @@
       .proGuss .proMotherMiddle section .content {
         float: left;
         height: 440px;
-        width: 600px;
-        background: saddlebrown; }
+        width: 600px; }
         .proGuss .proMotherMiddle section .content ul {
           height: 440px;
           width: 600px; }
+          .proGuss .proMotherMiddle section .content ul li:hover {
+            opacity: 0.5; }
           .proGuss .proMotherMiddle section .content ul li {
             border: 1px solid #eaeaea;
             float: left;
@@ -2714,48 +2541,53 @@
           margin-left: 30px;
           font-weight: normal;
           color: #333333; }
-        .proGuss .proMotherMiddle section .aside .carousel {
+        .proGuss .proMotherMiddle section .aside .CArousel {
           clear: both;
           height: 368px;
-          width: 248px; }
-          .proGuss .proMotherMiddle section .aside .carousel ul {
+          width: 248px;
+          position: relative; }
+          .proGuss .proMotherMiddle section .aside .CArousel ul:nth-of-type(1) {
+            display: block; }
+          .proGuss .proMotherMiddle section .aside .CArousel ul {
+            position: absolute;
             height: 368px;
             width: 248px;
-            overflow: hidden; }
-            .proGuss .proMotherMiddle section .aside .carousel ul li {
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            display: none; }
+            .proGuss .proMotherMiddle section .aside .CArousel ul li {
               width: 200px;
               height: 90px;
               font-size: 12px;
               margin: 0 34px;
               border-bottom: 1px dashed #eaeaea;
               overflow: hidden; }
-              .proGuss .proMotherMiddle section .aside .carousel ul li dl {
+              .proGuss .proMotherMiddle section .aside .CArousel ul li dl {
                 margin-top: 8px;
                 width: 200px;
                 height: 90px; }
-                .proGuss .proMotherMiddle section .aside .carousel ul li dl dt {
+                .proGuss .proMotherMiddle section .aside .CArousel ul li dl dt {
                   float: left; }
-                .proGuss .proMotherMiddle section .aside .carousel ul li dl dd {
+                .proGuss .proMotherMiddle section .aside .CArousel ul li dl dd {
                   float: left;
                   margin-left: 5px; }
-                  .proGuss .proMotherMiddle section .aside .carousel ul li dl dd p a {
+                  .proGuss .proMotherMiddle section .aside .CArousel ul li dl dd p:hover {
+                    text-decoration: underline; }
+                  .proGuss .proMotherMiddle section .aside .CArousel ul li dl dd p a {
                     color: #666666; }
-                  .proGuss .proMotherMiddle section .aside .carousel ul li dl dd p:nth-of-type(2) {
+                  .proGuss .proMotherMiddle section .aside .CArousel ul li dl dd p:nth-of-type(2) {
                     margin-top: 10px; }
-                    .proGuss .proMotherMiddle section .aside .carousel ul li dl dd p:nth-of-type(2) span:nth-of-type(1) {
+                    .proGuss .proMotherMiddle section .aside .CArousel ul li dl dd p:nth-of-type(2) span:nth-of-type(1) {
                       color: #e71436;
                       font-size: 13px;
                       font-weight: bold; }
-                    .proGuss .proMotherMiddle section .aside .carousel ul li dl dd p:nth-of-type(2) span:nth-of-type(2) {
+                    .proGuss .proMotherMiddle section .aside .CArousel ul li dl dd p:nth-of-type(2) span:nth-of-type(2) {
                       color: #999999;
                       text-decoration: line-through;
                       margin-left: 8px; }
-            .proGuss .proMotherMiddle section .aside .carousel ul li:nth-of-type(4) {
+            .proGuss .proMotherMiddle section .aside .CArousel ul li:nth-of-type(4) {
               border-bottom: none; }
-        .proGuss .proMotherMiddle section .aside .circle {
-          height: 20px;
-          width: 248px;
-          background: black; }
   .proGuss .proMotherBottom {
     height: 100px;
     width: 1094px;
@@ -2766,6 +2598,10 @@
       width: 1094px; }
       .proGuss .proMotherBottom ul li:nth-of-type(1) {
         margin-left: 0px; }
+      .proGuss .proMotherBottom ul li:hover i {
+        display: block !important;
+        color: #D43F3A !important;
+        font-weight: bolder !important; }
       .proGuss .proMotherBottom ul li {
         float: left;
         width: 121px;
@@ -2836,114 +2672,3 @@
               color: #A9A9A9; }
     .proGuss .contain dl:nth-of-type(4) {
       border-right: none; }
-
-.footer {
-  padding-top: 80px;
-  height: 537px;
-  background: #F6F6F6; }
-  .footer .footerWrap {
-    height: 384px;
-    width: 1094px;
-    margin: 0 auto;
-    background: #fff; }
-    .footer .footerWrap > ul {
-      border: 1px solid #E0E0E0;
-      height: 123px;
-      width: 1092px; }
-      .footer .footerWrap > ul li {
-        width: 250px;
-        height: 125px;
-        float: left;
-        padding: 0px 11px;
-        line-height: 125px; }
-        .footer .footerWrap > ul li dl {
-          width: 250px;
-          height: 125px; }
-          .footer .footerWrap > ul li dl dt {
-            height: 125px;
-            float: left; }
-            .footer .footerWrap > ul li dl dt i {
-              font-size: 44px !important; }
-          .footer .footerWrap > ul li dl dd {
-            height: 125px;
-            float: left; }
-            .footer .footerWrap > ul li dl dd p {
-              height: 30px;
-              margin-left: 10px;
-              width: 150px;
-              font-size: 13px; }
-            .footer .footerWrap > ul li dl dd h4 {
-              margin-left: 10px;
-              height: 20px;
-              width: 150px;
-              font-size: 16px;
-              font-weight: bolder; }
-    .footer .footerWrap .guideList {
-      height: 200px;
-      padding-top: 58px; }
-      .footer .footerWrap .guideList ul {
-        width: 1094px;
-        height: 128px; }
-        .footer .footerWrap .guideList ul li {
-          border-right: 1px solid #E0E0E0;
-          height: 113px;
-          float: left;
-          padding: 0 5px;
-          text-align: center;
-          padding-top: 5px; }
-          .footer .footerWrap .guideList ul li dl {
-            width: 110px; }
-            .footer .footerWrap .guideList ul li dl dt {
-              font-weight: normal; }
-            .footer .footerWrap .guideList ul li dl dd {
-              font-size: 12px;
-              margin-top: 5px; }
-              .footer .footerWrap .guideList ul li dl dd a {
-                color: #333; }
-        .footer .footerWrap .guideList ul li:nth-of-type(1) div {
-          margin-top: 10px; }
-          .footer .footerWrap .guideList ul li:nth-of-type(1) div > span {
-            font-size: 12px; }
-          .footer .footerWrap .guideList ul li:nth-of-type(1) div a {
-            margin-left: 5px; }
-            .footer .footerWrap .guideList ul li:nth-of-type(1) div a i {
-              font-size: 25px !important; }
-            .footer .footerWrap .guideList ul li:nth-of-type(1) div a span {
-              display: none; }
-          .footer .footerWrap .guideList ul li:nth-of-type(1) div a:nth-of-type(1) i {
-            color: #FF0000 !important; }
-          .footer .footerWrap .guideList ul li:nth-of-type(1) div a:nth-of-type(2) i {
-            color: limegreen !important; }
-          .footer .footerWrap .guideList ul li:nth-of-type(1) div a:nth-of-type(3) i {
-            color: #5CB85C !important; }
-        .footer .footerWrap .guideList ul li:nth-of-type(7) {
-          border-right: none; }
-          .footer .footerWrap .guideList ul li:nth-of-type(7) dl dt img {
-            height: 100px; }
-          .footer .footerWrap .guideList ul li:nth-of-type(7) dl dd {
-            margin-top: 0; }
-  .footer .footerAbout {
-    height: 153px;
-    background: #333; }
-    .footer .footerAbout .boxC {
-      width: 1094px;
-      height: 153px;
-      margin: 0 auto; }
-      .footer .footerAbout .boxC .friendLink {
-        padding-top: 30px;
-        height: 123px;
-        width: 800px;
-        font-size: 12px;
-        margin: 0 auto;
-        text-align: center;
-        color: #c2c2c2; }
-        .footer .footerAbout .boxC .friendLink p {
-          margin-top: 6px; }
-          .footer .footerAbout .boxC .friendLink p a {
-            color: #c2c2c2; }
-        .footer .footerAbout .boxC .friendLink p:nth-of-type(3) a span:nth-of-type(1) img {
-          height: 15px;
-          width: 15px; }
-        .footer .footerAbout .boxC .friendLink p:nth-of-type(4) a img {
-          height: 30px;
-          margin: 5px 15px 0 0; }

@@ -1,7 +1,8 @@
 define(["jquery","cookie"],function($){
+
 	$.ajax("/html/include/header.html").done(function(data){
 		$(".Header").html(data);
-	}).done(function(){
+	}).done(function(){//实现搜索功能
 		$("#TopSearch").on("keyup",function(){
 			$.getJSON("https://suggest.taobao.com/sug?code=utf-8&q="+ $("#TopSearch").val() +"&callback=?",function(data){
 			//实现鼠标按键松开获取收缩内容
@@ -9,8 +10,6 @@ define(["jquery","cookie"],function($){
 			var Data=data.result;
 			var ul=$(".ShowSearchMatch");
 			var liAll=$(".ShowSearchMatch li");
-			console.log(liAll)
-			console.log(Data);
 			for(var arr in Data){
 				$(liAll[arr]).html(Data[arr][0]);
 				}
@@ -19,7 +18,10 @@ define(["jquery","cookie"],function($){
 		$("body").not("#TopSearch").on("click",function(){
 			$(".ShowSearchMatch").css("display","none");
 		});
+	}).done(function(){
+		console.log("haha");
 	});
+	//异步加载尾部数据
 	$.ajax("/html/include/footer.html").done(function(data){
 		$(".footer").html(data);
 	});
